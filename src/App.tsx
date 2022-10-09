@@ -6,7 +6,6 @@ import Home from "./onepirate/Home";
 function App() {
   return (
     <div className='App'>
-      <Button variant='outlined'>Primary</Button>
       <Home></Home>
     </div>
   );
