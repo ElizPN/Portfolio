@@ -14,8 +14,7 @@ function AppAppBar() {
   return (
     <div>
       <AppBar position='fixed'>
-        <Toolbar sx={{ justifyContent: "space-between" }}>
-          <Box sx={{ flex: 1 }} />
+        <Toolbar>
           <Link
             variant='h6'
             underline='none'
@@ -25,10 +24,6 @@ function AppAppBar() {
           >
             {"onepirate "}
           </Link>
-
-          <Box
-            sx={{ flex: 1, display: "flex", justifyContent: "flex-end" }}
-          ></Box>
         </Toolbar>
       </AppBar>
       <Toolbar />
