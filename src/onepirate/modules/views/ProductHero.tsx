@@ -1,6 +1,7 @@
 import * as React from "react";
 import Button from "../components/Button";
 import Typography from "../components/Typography";
+import ActionAreaCard from "./ActionAreaCard";
 import ProductHeroLayout from "./ProductHeroLayout";
 import backgroundImage from "./woman-5653501.jpeg";
 
@@ -31,9 +32,10 @@ export default function ProductHero(): JSX.Element {
         TypeScript, JavaScript, React, Redux, CSS, HTML
       </Typography>
 
-      <Typography variant='body2' color='inherit' sx={{ mt: 2 }}>
+      {/* <Typography variant='body2' color='inherit' sx={{ mt: 2 }}>
         Discover the experience
-      </Typography>
+      </Typography> */}
+      <ActionAreaCard></ActionAreaCard>
     </ProductHeroLayout>
   );
 }
