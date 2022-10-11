@@ -12,7 +12,11 @@ export default function ActionAreaCard() {
           <Typography gutterBottom variant='h5' component='div'>
             Hello everyone
           </Typography>
-          <Typography variant='body2' color='text.secondary'>
+          <Typography
+            variant='body2'
+            color='text.secondary'
+            textAlign={"justify"}
+          >
             I am junior front-end developer with 2 years experience in Front-end
             development. I have passed multiple Front-end development courses.
             During that time I have created over 900 commits in 26 repositories,
