@@ -13,14 +13,13 @@ export default function ActionAreaCard() {
             Lizard
           </Typography>
           <Typography variant='body2' color='text.secondary'>
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica Lizards are
-            a widespread group of squamate reptiles, with over 6,000 species,
-            ranging across all continents except Antarctica Lizards are a
-            widespread group of squamate reptiles, with over 6,000 species,
-            ranging across all continents except Antarctica Lizards are a
-            widespread group of squamate reptiles, with over 6,000 species,
-            ranging across all continents except Antarctica
+            Hello everyone, my name is Liza Romanova. I have 2 years experience
+            in Front-end development. I have passed multiple Front-end
+            development courses. During that time I have created over 900
+            commits in 26 repositories, solved over 200 algorithmic challenges
+            in JS, created a game in PhaserJS and the biggest project in my
+            portfolio : a Web blog using React with TypeScript and Contentful
+            API.
           </Typography>
         </CardContent>
       </CardActionArea>
