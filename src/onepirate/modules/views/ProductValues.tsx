@@ -6,7 +6,9 @@ import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Typography from "../components/Typography";
 import Link from "@mui/material/Link";
-import firstImg from "./ts-react-redux.jpeg";
+import reactProjectImg from "./ts-react-redux.jpeg";
+import duckImg from "./ducks.jpg";
+import honeyImg from "./bee.jpg";
 
 const item: SxProps<Theme> = {
   display: "flex",
@@ -38,7 +40,7 @@ function ProductValues() {
                 >
                   <Box
                     component='img'
-                    src={firstImg}
+                    src={reactProjectImg}
                     alt='suitcase'
                     sx={{ height: 160, width: 300 }}
                   />
@@ -46,12 +48,6 @@ function ProductValues() {
                 </Link>
               </Typography>
               <Typography variant='h5'>
-                {/* {
-                  'From the latest trendy boutique hotel to the iconic palace with XXL pool'
-                }
-                {
-                  ', go for a mini-vacation just a few subway stops away from your home.'
-                } */}
                 On this website you will see solutions to the most common tasks
                 on React.
               </Typography>
@@ -59,37 +55,46 @@ function ProductValues() {
           </Grid>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <Box
-                component='img'
-                src='/static/themes/onepirate/productValues2.svg'
-                alt='graph'
-                sx={{ height: 55 }}
-              />
               <Typography variant='h6' sx={{ my: 5 }}>
-                New experiences
+                <Link
+                  href='https://elizpn.github.io/react-typical-challenges/'
+                  sx={{ textDecoration: "none" }}
+                >
+                  <Box
+                    component='img'
+                    src={duckImg}
+                    alt='graph'
+                    sx={{ height: 160, width: 300 }}
+                  />
+                  Duck game
+                </Link>
               </Typography>
               <Typography variant='h5'>
-                {
-                  "Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… "
-                }
-                {"your Sundays will not be alike."}
+                This is my first game with hungry duck. Her goal - to eat bread
+                before her competitor will do this.
               </Typography>
             </Box>
           </Grid>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <Box
-                component='img'
-                src='/static/themes/onepirate/productValues3.svg'
-                alt='clock'
-                sx={{ height: 55 }}
-              />
               <Typography variant='h6' sx={{ my: 5 }}>
-                Exclusive rates
+                <Link
+                  href='https://elizpn.github.io/react-typical-challenges/'
+                  sx={{ textDecoration: "none" }}
+                >
+                  {" "}
+                  <Box
+                    component='img'
+                    src={honeyImg}
+                    alt='clock'
+                    sx={{ height: 160, width: 300 }}
+                  />
+                  Honey website
+                </Link>
               </Typography>
               <Typography variant='h5'>
-                {"By registering, you will access specially negotiated rates "}
-                {"that you will not find anywhere else."}
+                Website where you can find a lot of information abou different
+                types of honey and its benefits.
               </Typography>
             </Box>
           </Grid>
