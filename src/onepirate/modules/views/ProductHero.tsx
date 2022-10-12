@@ -3,7 +3,7 @@ import Button from "../components/Button";
 import Typography from "../components/Typography";
 import ActionAreaCard from "./ActionAreaCard";
 import ProductHeroLayout from "./ProductHeroLayout";
-import backgroundImage from "./woman-5653501.jpeg";
+import backgroundImage from "./images/woman-5653501.jpeg";
 
 export default function ProductHero(): JSX.Element {
   return (

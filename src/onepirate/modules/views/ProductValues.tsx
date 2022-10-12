@@ -6,9 +6,9 @@ import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Typography from "../components/Typography";
 import Link from "@mui/material/Link";
-import reactProjectImg from "./ts-react-redux.jpeg";
-import duckImg from "./ducks.jpg";
-import honeyImg from "./bee.jpg";
+import reactProjectImg from "./images/ts-react-redux.jpeg";
+import duckImg from "./images/ducks.jpg";
+import honeyImg from "./images/bee.jpg";
 
 const item: SxProps<Theme> = {
   display: "flex",
