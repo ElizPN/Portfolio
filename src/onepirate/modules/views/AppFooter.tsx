@@ -4,6 +4,8 @@ import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
 import Container from "@mui/material/Container";
 import Typography from "../components/Typography";
+import githubLogo from "./images/githubLogo2.png";
+import linkedinLogo from "./images/linkedinLogo.png";
 
 function Copyright() {
   return (
@@ -18,16 +20,16 @@ function Copyright() {
 }
 
 const iconStyle = {
-  width: 48,
-  height: 48,
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  backgroundColor: "warning.main",
   mr: 1,
-  "&:hover": {
-    bgcolor: "warning.dark",
-  },
+  mb: 1,
+
+  textDecoration: "none",
+  // "&:hover": {
+  //   bgcolor: "gray",
+  // },
 };
 
 export default function AppFooter() {
@@ -50,22 +52,19 @@ export default function AppFooter() {
                 <Box
                   component='a'
                   href='https://github.com/ElizPN'
+                  target='_blank'
                   sx={iconStyle}
                 >
-                  <img
-                    src='/static/themes/onepirate/appFooterFacebook.png'
-                    alt='GitHub'
-                  />
+                  <img src={githubLogo} alt='GitHub' width={85} />
                 </Box>
+
                 <Box
                   component='a'
-                  href='https://twitter.com/MUI_hq'
+                  href='https://www.linkedin.com/in/yelyzaveta-romanova-8216a6214/'
+                  target='_blank'
                   sx={iconStyle}
                 >
-                  <img
-                    src='/static/themes/onepirate/appFooterTwitter.png'
-                    alt='Linkedin'
-                  />
+                  <img src={linkedinLogo} alt='Linkedin' width={85} />
                 </Box>
               </Grid>
               <Grid item>
