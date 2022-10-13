@@ -50,6 +50,8 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
   "& .imageTitle": {
     position: "relative",
     padding: `${theme.spacing(2)} ${theme.spacing(4)} 14px`,
+    backgroundColor: "rgba(10,10,10,0.5)",
+    fontSize: 21,
   },
   "& .imageMarked": {
     height: 3,
