@@ -6,6 +6,7 @@ import Container from "@mui/material/Container";
 import Typography from "../components/Typography";
 import githubLogo from "./images/githubLogo2.png";
 import linkedinLogo from "./images/linkedinLogo.png";
+import { fontWeight } from "@mui/system";
 
 // MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-1ld3b9g-MuiGrid-root
 
@@ -39,6 +40,7 @@ export default function AppFooter() {
     <Typography
       component='footer'
       sx={{ display: "flex", bgcolor: "secondary.light" }}
+      id='footer'
     >
       <Container sx={{ my: 8, display: "flex" }}>
         <Grid container spacing={5} justifyContent='center' direction='column'>
@@ -62,13 +64,28 @@ export default function AppFooter() {
                 <img src={linkedinLogo} alt='Linkedin' width={85} />
               </Box>
             </Grid>
-            <Grid item>
+            <Grid
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                fontSize: "16px",
+                color: "rgb(43 36 36 / 87%)",
+              }}
+            >
               <Link
                 href='mailto: romanovaliza9393@gmail.com'
                 target='_blank'
-                sx={iconStyle}
+                sx={{
+                  textDecoration: "none",
+                  color: "rgb(43 36 36 / 87%)",
+
+                  mt: "10px",
+                  "&:hover": {
+                    color: "#943652",
+                  },
+                }}
               >
-                Contact me: romanovaliza9393@gmail.com
+                Contact me by email: romanovaliza9393@gmail.com
               </Link>
             </Grid>
           </Grid>
