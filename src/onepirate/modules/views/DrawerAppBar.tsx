@@ -22,7 +22,13 @@ interface Props {
 }
 
 const drawerWidth = 240;
-const navItems = ["About me", "Projects", "Skills", "Contacts"];
+// const navItems = ["About me", "Projects", "Skills", "Contacts"];
+const navNewItems = [
+  { name: "About me", link: "#aboutMe" },
+  { name: "Projects", link: "#projects" },
+  { name: "Skills", link: "#scills" },
+  { name: "Contacts", link: "#contacts" },
+];
 
 export default function DrawerAppBar(props: Props) {
   const { window } = props;
@@ -34,15 +40,13 @@ export default function DrawerAppBar(props: Props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      {/* <Typography variant='h6' sx={{ my: 2 }}>
-        MUI
-      </Typography> */}
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
+        {navNewItems.map((item) => (
+          <ListItem key={item.name}>
+            <ListItemButton sx={{ textAlign: "center" }} href={item.link}>
+              {/* <ListItemText primary={item} /> */}
+              {item.name}
             </ListItemButton>
           </ListItem>
         ))}
@@ -68,9 +72,9 @@ export default function DrawerAppBar(props: Props) {
           </IconButton>
 
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
-                {item}
+            {navNewItems.map((item) => (
+              <Button key={item.name} sx={{ color: "#fff" }} href={item.link}>
+                {item.name}
               </Button>
             ))}
           </Box>
