@@ -32,9 +32,6 @@ export default function ProductHero(): JSX.Element {
         TypeScript, JavaScript, React, Redux, CSS, HTML
       </Typography>
 
-      {/* <Typography variant='body2' color='inherit' sx={{ mt: 2 }}>
-        Discover the experience
-      </Typography> */}
       <ActionAreaCard></ActionAreaCard>
     </ProductHeroLayout>
   );

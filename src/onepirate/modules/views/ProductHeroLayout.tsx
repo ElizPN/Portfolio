@@ -37,7 +37,7 @@ export default function ProductHeroLayout(
   const { sxBackground, children } = props;
 
   return (
-    <ProductHeroLayoutRoot>
+    <ProductHeroLayoutRoot id='aboutMe'>
       <Container
         sx={{
           mt: 3,
