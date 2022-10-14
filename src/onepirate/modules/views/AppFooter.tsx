@@ -7,6 +7,8 @@ import Typography from "../components/Typography";
 import githubLogo from "./images/githubLogo2.png";
 import linkedinLogo from "./images/linkedinLogo.png";
 
+// MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-1ld3b9g-MuiGrid-root
+
 function Copyright() {
   return (
     <React.Fragment>
@@ -39,44 +41,37 @@ export default function AppFooter() {
       sx={{ display: "flex", bgcolor: "secondary.light" }}
     >
       <Container sx={{ my: 8, display: "flex" }}>
-        <Grid container spacing={5}>
+        <Grid container spacing={5} justifyContent='center' direction='column'>
           <Grid item xs={6} sm={4} md={3}>
-            <Grid
-              container
-              direction='column'
-              justifyContent='flex-end'
-              spacing={2}
-              sx={{ height: 120 }}
-            >
-              <Grid item sx={{ display: "flex" }}>
-                <Box
-                  component='a'
-                  href='https://github.com/ElizPN'
-                  target='_blank'
-                  sx={iconStyle}
-                >
-                  <img src={githubLogo} alt='GitHub' width={85} />
-                </Box>
+            <Grid item sx={{ display: "flex" }}>
+              <Box
+                component='a'
+                href='https://github.com/ElizPN'
+                target='_blank'
+                sx={iconStyle}
+              >
+                <img src={githubLogo} alt='GitHub' width={85} />
+              </Box>
 
-                <Box
-                  component='a'
-                  href='https://www.linkedin.com/in/yelyzaveta-romanova-8216a6214/'
-                  target='_blank'
-                  sx={iconStyle}
-                >
-                  <img src={linkedinLogo} alt='Linkedin' width={85} />
-                </Box>
-              </Grid>
-              <Grid item>
-                <Copyright />
-              </Grid>
+              <Box
+                component='a'
+                href='https://www.linkedin.com/in/yelyzaveta-romanova-8216a6214/'
+                target='_blank'
+                sx={iconStyle}
+              >
+                <img src={linkedinLogo} alt='Linkedin' width={85} />
+              </Box>
+            </Grid>
+            <Grid item>
+              <Link
+                href='mailto: romanovaliza9393@gmail.com'
+                target='_blank'
+                sx={iconStyle}
+              >
+                Contact me: romanovaliza9393@gmail.com
+              </Link>
             </Grid>
           </Grid>
-          <Grid item xs={6} sm={4} md={2}>
-            <Box component='ul' sx={{ m: 0, listStyle: "none", p: 0 }}></Box>
-          </Grid>
-          <Grid item xs={6} sm={8} md={4}></Grid>
-          <Grid item></Grid>
         </Grid>
       </Container>
     </Typography>
