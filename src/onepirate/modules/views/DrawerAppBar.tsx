@@ -45,7 +45,6 @@ export default function DrawerAppBar(props: Props) {
         {navNewItems.map((item) => (
           <ListItem key={item.name}>
             <ListItemButton sx={{ textAlign: "center" }} href={item.link}>
-              {/* <ListItemText primary={item} /> */}
               {item.name}
             </ListItemButton>
           </ListItem>
