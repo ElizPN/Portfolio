@@ -6,16 +6,24 @@ import { CardActionArea } from "@mui/material";
 
 export default function ActionAreaCard() {
   return (
-    <Card sx={{ maxWidth: 545, opacity: 0.8 }}>
+    <Card sx={{ maxWidth: 745, opacity: 0.8, padding: 3 }}>
       <CardActionArea>
         <CardContent>
-          <Typography gutterBottom variant='h5' component='div'>
+          <Typography
+            gutterBottom
+            variant='h5'
+            component='div'
+            color='black'
+            fontSize={23}
+          >
             Hello everyone
           </Typography>
           <Typography
             variant='body2'
             color='text.secondary'
             textAlign={"justify"}
+            fontSize={20}
+            maxWidth={700}
           >
             I am junior front-end developer with 2 years experience in Front-end
             development. I have passed multiple Front-end development courses.
