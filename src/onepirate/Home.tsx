@@ -5,6 +5,7 @@ import ProductHero from "./modules/views/ProductHero";
 import ProductValues from "./modules/views/ProductValues";
 import AppAppBar from "./modules/views/AppAppBar";
 import withRoot from "./modules/withRoot";
+import FlippyCard from "./modules/views/FlippyCard";
 
 function Index() {
   return (
@@ -14,6 +15,7 @@ function Index() {
       <ProductValues />
       <ProductCategories />
       <AppFooter />
+      <FlippyCard />
     </React.Fragment>
   );
 }
