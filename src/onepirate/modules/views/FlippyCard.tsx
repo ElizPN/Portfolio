@@ -15,60 +15,6 @@ const FlippyStyle = {
   justifyContent: "center",
 };
 
-const FlippyOnClick = ({ flipDirection = "vertical" }) => (
-  <Flippy flipOnClick={true} flipDirection={flipDirection} style={FlippyStyle}>
-    <React.Fragment>
-      <FrontSide
-        style={{
-          backgroundColor: "#41669d",
-          display: "flex",
-          alignItems: "center",
-          flexDirection: "column",
-          backgroundImage: `url(${reactImg})`,
-        }}
-      >
-        <img src={reactImg} style={{ maxWidth: "100%", maxHeight: "100%" }} />
-        RICK
-        <span
-          style={{
-            fontSize: "12px",
-            position: "absolute",
-            bottom: "10px",
-            width: "100%",
-          }}
-        >
-          I flip {flipDirection}ly on click
-          <br />
-          (FRONT SIDE)
-        </span>
-      </FrontSide>
-      <BackSide
-        style={{
-          backgroundColor: "#175852",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          flexDirection: "column",
-        }}
-      >
-        ROCKS
-        <span
-          style={{
-            fontSize: "12px",
-            position: "absolute",
-            bottom: "10px",
-            width: "100%",
-          }}
-        >
-          I flip {flipDirection}ly on click
-          <br />
-          (BACK SIDE)
-        </span>
-      </BackSide>
-    </React.Fragment>
-  </Flippy>
-);
-
 class FlippyCard extends React.Component<{}, { isFlipped: boolean }> {
   flippyHorizontal: { toggle: () => void } = { toggle: () => {} };
   constructor(props: any) {
@@ -94,7 +40,64 @@ class FlippyCard extends React.Component<{}, { isFlipped: boolean }> {
             flipOnClick={false}
             style={FlippyStyle}
           ></Flippy>
-          <FlippyOnClick flipDirection='horizontal' />
+          <Flippy
+            flipOnClick={true}
+            flipDirection='horizontal'
+            style={FlippyStyle}
+          >
+            <React.Fragment>
+              <FrontSide
+                style={{
+                  backgroundColor: "#41669d",
+                  display: "flex",
+                  alignItems: "center",
+                  flexDirection: "column",
+                  backgroundImage: `url(${reactImg})`,
+                }}
+              >
+                <img
+                  src={reactImg}
+                  style={{ maxWidth: "100%", maxHeight: "100%" }}
+                />
+                RICK
+                <span
+                  style={{
+                    fontSize: "12px",
+                    position: "absolute",
+                    bottom: "10px",
+                    width: "100%",
+                  }}
+                >
+                  I flip 'horizontal'ly on click
+                  <br />
+                  (FRONT SIDE)
+                </span>
+              </FrontSide>
+              <BackSide
+                style={{
+                  backgroundColor: "#175852",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexDirection: "column",
+                }}
+              >
+                ROCKS
+                <span
+                  style={{
+                    fontSize: "12px",
+                    position: "absolute",
+                    bottom: "10px",
+                    width: "100%",
+                  }}
+                >
+                  I flip 'horizontal'ly on click
+                  <br />
+                  (BACK SIDE)
+                </span>
+              </BackSide>
+            </React.Fragment>
+          </Flippy>
         </div>
       </div>
     );
