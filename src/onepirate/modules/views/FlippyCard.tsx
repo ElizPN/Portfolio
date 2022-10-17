@@ -15,7 +15,7 @@ const FlippyStyle = {
   justifyContent: "center",
 };
 
-class FlippyCard extends React.Component<{}, { isFlipped: boolean }> {
+class FlippyCard extends React.Component {
   flippyHorizontal: { toggle: () => void } = { toggle: () => {} };
   constructor(props: any) {
     super(props);
