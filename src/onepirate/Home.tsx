@@ -15,7 +15,6 @@ function Index() {
       <ProductValues />
       <ProductCategories />
       <AppFooter />
-      <FlippyCard />
     </React.Fragment>
   );
 }
