@@ -16,8 +16,7 @@ import htmlCssImg from "./images/html-css2.jpg";
 import Flippy, { FrontSide, BackSide } from "react-flippy";
 
 const FlippyStyle = {
-  width: "200px",
-  height: "300px",
+  width: "40%",
   textAlign: "center",
   color: "#FFF",
   fontFamily: "sans-serif",
@@ -37,10 +36,6 @@ const ImageBackdrop = styled("div")(({ theme }) => ({
 }));
 
 const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
-  position: "relative",
-  display: "block",
-  padding: 0,
-  borderRadius: 0,
   height: "40vh",
   [theme.breakpoints.down("md")]: {
     width: "100% !important",
@@ -132,6 +127,56 @@ export default function ProductCategories() {
         Skills
       </Typography>
       <Box sx={{ mt: 8, display: "flex", flexWrap: "wrap" }}>
+        <Flippy
+          flipOnClick={true}
+          flipDirection='horizontal'
+          style={FlippyStyle}
+        >
+          <React.Fragment>
+            <FrontSide
+              style={{
+                backgroundImage: `url(${jsImg})`,
+                backgroundPosition: "center",
+              }}
+            >
+              <ImageIconButton key={"JavaScript"} style={{}}>
+                <Box sx={{}}>
+                  <Typography
+                    component='h3'
+                    variant='h6'
+                    color='inherit'
+                    className='imageTitle'
+                  >
+                    {"JavaScript"}
+                  </Typography>
+                </Box>
+              </ImageIconButton>
+            </FrontSide>
+            <BackSide
+              style={{
+                backgroundColor: "#175852",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexDirection: "column",
+              }}
+            >
+              ROCKS
+              <span
+                style={{
+                  fontSize: "12px",
+                  position: "absolute",
+                  bottom: "10px",
+                  width: "100%",
+                }}
+              >
+                I flip 'horizontal'ly on click
+                <br />
+                (BACK SIDE)
+              </span>
+            </BackSide>
+          </React.Fragment>
+        </Flippy>
         {images.map((image) => (
           <ImageIconButton
             key={image.title}
@@ -178,81 +223,6 @@ export default function ProductCategories() {
           </ImageIconButton>
         ))}
       </Box>
-
-      <div className='FlippyCard'>
-        <div
-          style={{
-            display: "flex",
-            flex: "1 0 200px",
-            justifyContent: "space-around",
-            flexWrap: "wrap",
-          }}
-        >
-          <Flippy
-            ref={(r: { toggle: () => void }) => (flippyHorizontal = r)}
-            flipOnClick={false}
-            style={FlippyStyle}
-          ></Flippy>
-          <Flippy
-            flipOnClick={true}
-            flipDirection='horizontal'
-            style={FlippyStyle}
-          >
-            <React.Fragment>
-              <FrontSide
-                style={{
-                  backgroundColor: "#41669d",
-                  display: "flex",
-                  alignItems: "center",
-                  flexDirection: "column",
-                  backgroundImage: `url(${reactImg})`,
-                }}
-              >
-                <img
-                  src={reactImg}
-                  style={{ maxWidth: "100%", maxHeight: "100%" }}
-                />
-                RICK
-                <span
-                  style={{
-                    fontSize: "12px",
-                    position: "absolute",
-                    bottom: "10px",
-                    width: "100%",
-                  }}
-                >
-                  I flip 'horizontal'ly on click
-                  <br />
-                  (FRONT SIDE)
-                </span>
-              </FrontSide>
-              <BackSide
-                style={{
-                  backgroundColor: "#175852",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  flexDirection: "column",
-                }}
-              >
-                ROCKS
-                <span
-                  style={{
-                    fontSize: "12px",
-                    position: "absolute",
-                    bottom: "10px",
-                    width: "100%",
-                  }}
-                >
-                  I flip 'horizontal'ly on click
-                  <br />
-                  (BACK SIDE)
-                </span>
-              </BackSide>
-            </React.Fragment>
-          </Flippy>
-        </div>
-      </div>
     </Container>
   );
 }
