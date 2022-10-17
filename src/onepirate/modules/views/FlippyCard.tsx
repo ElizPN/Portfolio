@@ -2,6 +2,7 @@ import React from "react";
 import Flippy, { FrontSide, BackSide } from "react-flippy";
 
 import Rick from "./images/rick.png";
+import reactImg from "./images/react4.jpg";
 import "../../../App.css";
 
 const FlippyStyle = {
@@ -13,7 +14,7 @@ const FlippyStyle = {
   fontSize: "30px",
   justifyContent: "center",
 };
-
+//our card
 const DefaultCardContents = ({ children }: { children: React.ReactNode }) => (
   <React.Fragment>
     <FrontSide
@@ -22,9 +23,10 @@ const DefaultCardContents = ({ children }: { children: React.ReactNode }) => (
         display: "flex",
         alignItems: "center",
         flexDirection: "column",
+        backgroundImage: `url(${reactImg})`,
       }}
     >
-      <img src={Rick} style={{ maxWidth: "100%", maxHeight: "100%" }} />
+      <img src={reactImg} style={{ maxWidth: "100%", maxHeight: "100%" }} />
       RICK
       <span
         style={{
@@ -78,12 +80,6 @@ class FlippyCard extends React.Component<{}, { isFlipped: boolean }> {
     this.state = {
       isFlipped: false,
     };
-
-    setInterval(() => {
-      this.setState({
-        isFlipped: !this.state.isFlipped,
-      });
-    }, 3000);
   }
 
   render() {
@@ -101,18 +97,7 @@ class FlippyCard extends React.Component<{}, { isFlipped: boolean }> {
             ref={(r: { toggle: () => void }) => (this.flippyHorizontal = r)}
             flipOnClick={false}
             style={FlippyStyle}
-          >
-            <DefaultCardContents>
-              I flip horizontally with an event
-              <br />
-              <button
-                type='button'
-                onClick={() => this.flippyHorizontal.toggle()}
-              >
-                Toggle Me!
-              </button>
-            </DefaultCardContents>
-          </Flippy>
+          ></Flippy>
           <FlippyOnClick flipDirection='horizontal' />
         </div>
       </div>
