@@ -14,62 +14,58 @@ const FlippyStyle = {
   fontSize: "30px",
   justifyContent: "center",
 };
-//our card
-const DefaultCardContents = ({ children }: { children: React.ReactNode }) => (
-  <React.Fragment>
-    <FrontSide
-      style={{
-        backgroundColor: "#41669d",
-        display: "flex",
-        alignItems: "center",
-        flexDirection: "column",
-        backgroundImage: `url(${reactImg})`,
-      }}
-    >
-      <img src={reactImg} style={{ maxWidth: "100%", maxHeight: "100%" }} />
-      RICK
-      <span
-        style={{
-          fontSize: "12px",
-          position: "absolute",
-          bottom: "10px",
-          width: "100%",
-        }}
-      >
-        {children}
-        <br />
-        (FRONT SIDE)
-      </span>
-    </FrontSide>
-    <BackSide
-      style={{
-        backgroundColor: "#175852",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        flexDirection: "column",
-      }}
-    >
-      ROCKS
-      <span
-        style={{
-          fontSize: "12px",
-          position: "absolute",
-          bottom: "10px",
-          width: "100%",
-        }}
-      >
-        {children}
-        <br />
-        (BACK SIDE)
-      </span>
-    </BackSide>
-  </React.Fragment>
-);
 
 const FlippyOnClick = ({ flipDirection = "vertical" }) => (
   <Flippy flipOnClick={true} flipDirection={flipDirection} style={FlippyStyle}>
-    <DefaultCardContents>I flip {flipDirection}ly on click</DefaultCardContents>
+    <React.Fragment>
+      <FrontSide
+        style={{
+          backgroundColor: "#41669d",
+          display: "flex",
+          alignItems: "center",
+          flexDirection: "column",
+          backgroundImage: `url(${reactImg})`,
+        }}
+      >
+        <img src={reactImg} style={{ maxWidth: "100%", maxHeight: "100%" }} />
+        RICK
+        <span
+          style={{
+            fontSize: "12px",
+            position: "absolute",
+            bottom: "10px",
+            width: "100%",
+          }}
+        >
+          I flip {flipDirection}ly on click
+          <br />
+          (FRONT SIDE)
+        </span>
+      </FrontSide>
+      <BackSide
+        style={{
+          backgroundColor: "#175852",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: "column",
+        }}
+      >
+        ROCKS
+        <span
+          style={{
+            fontSize: "12px",
+            position: "absolute",
+            bottom: "10px",
+            width: "100%",
+          }}
+        >
+          I flip {flipDirection}ly on click
+          <br />
+          (BACK SIDE)
+        </span>
+      </BackSide>
+    </React.Fragment>
   </Flippy>
 );
 
