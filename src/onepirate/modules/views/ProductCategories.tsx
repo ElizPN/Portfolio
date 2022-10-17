@@ -112,7 +112,7 @@ const images = [
     width: "40%",
   },
 ];
-// background-color: rgba(10,10,10,0.5)
+
 export default function ProductCategories() {
   return (
     <Container component='section' sx={{ mt: 8, mb: 4 }} id='scills'>
