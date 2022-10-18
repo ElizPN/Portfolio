@@ -148,10 +148,12 @@ export default function ProductCategories() {
                     className='imageTitle'
                   >
                     {"JavaScript"}
+                    <div className='imageMarked' />
                   </Typography>
                 </Box>
               </ImageIconButton>
             </FrontSide>
+
             <BackSide
               style={{
                 backgroundColor: "#175852",
