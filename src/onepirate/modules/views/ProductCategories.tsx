@@ -17,11 +17,11 @@ import Flippy, { FrontSide, BackSide } from "react-flippy";
 
 const FlippyStyle = {
   width: "40%",
-  textAlign: "center",
+  // textAlign: "center",
   color: "#FFF",
-  fontFamily: "sans-serif",
-  fontSize: "30px",
-  justifyContent: "center",
+  // fontFamily: "sans-serif",
+  // fontSize: "30px",
+  // justifyContent: "center",
 };
 
 const ImageBackdrop = styled("div")(({ theme }) => ({
@@ -143,60 +143,67 @@ export default function ProductCategories() {
         Skills
       </Typography>
       <Box sx={{ mt: 8, display: "flex", flexWrap: "wrap" }}>
-        <Flippy
-          flipOnClick={true}
-          flipDirection='horizontal'
-          style={FlippyStyle}
-        >
-          <ImageIconButton2>
-            <FrontSide
-              style={{
-                backgroundImage: `url(${jsImg})`,
-                backgroundPosition: "center",
-                padding: 0,
-              }}
-            >
-              <ImageBackdrop className='imageBackdrop' />
-              <ImageIconButton key={"JavaScript"} style={{}}>
-                <Box sx={{}}>
-                  <Typography
-                    component='h3'
-                    variant='h6'
-                    color='inherit'
-                    className='imageTitle'
-                  >
-                    {"JavaScript"}
-                    <div className='imageMarked' />
-                  </Typography>
-                </Box>
-              </ImageIconButton>
-            </FrontSide>
-
-            <BackSide
-              style={{
-                backgroundColor: "#175852",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                flexDirection: "column",
-              }}
-            >
-              ROCKS
-              <span
+        {images.map((image) => (
+          <Flippy
+            flipOnClick={true}
+            flipDirection='horizontal'
+            style={{
+              width: image.width,
+              color: "#FFF",
+            }}
+          >
+            <ImageIconButton2>
+              <FrontSide
                 style={{
-                  fontSize: "12px",
-                  position: "absolute",
-                  bottom: "10px",
-                  width: "100%",
+                  backgroundImage: `url(${image.url})`,
+                  backgroundPosition: "center",
+                  padding: 0,
+                  backgroundSize: "cover",
                 }}
               >
-                I flip 'horizontal'ly on click
-                <br />
-                (BACK SIDE)
-              </span>
-            </BackSide>
-          </ImageIconButton2>
-        </Flippy>
+                <ImageBackdrop className='imageBackdrop' />
+                <ImageIconButton key={image.title} style={{}}>
+                  <Box sx={{}}>
+                    <Typography
+                      component='h3'
+                      variant='h6'
+                      color='inherit'
+                      className='imageTitle'
+                    >
+                      {image.title}
+                      <div className='imageMarked' />
+                    </Typography>
+                  </Box>
+                </ImageIconButton>
+              </FrontSide>
+
+              <BackSide
+                style={{
+                  backgroundColor: "#175852",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexDirection: "column",
+                }}
+              >
+                ROCKS
+                <span
+                  style={{
+                    fontSize: "12px",
+                    position: "absolute",
+                    bottom: "10px",
+                    width: "100%",
+                  }}
+                >
+                  I flip 'horizontal'ly on click
+                  <br />
+                  (BACK SIDE)
+                </span>
+              </BackSide>
+            </ImageIconButton2>
+          </Flippy>
+        ))}
+
         {images.map((image) => (
           <ImageIconButton
             key={image.title}
