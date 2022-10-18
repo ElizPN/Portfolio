@@ -71,6 +71,23 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
   },
 }));
 
+const ImageIconButton2 = styled(ButtonBase)(({ theme }) => ({
+  width: "100%",
+
+  "&:hover": {
+    zIndex: 1,
+  },
+  "&:hover .imageBackdrop": {
+    opacity: 0.15,
+  },
+  "&:hover .imageMarked": {
+    opacity: 0,
+  },
+  "&:hover .imageTitle": {
+    border: "4px solid currentColor",
+  },
+}));
+
 const images = [
   {
     url: jsImg,
@@ -120,7 +137,6 @@ const images = [
 ];
 
 export default function ProductCategories() {
-  let flippyHorizontal = { toggle: () => {} };
   return (
     <Container component='section' sx={{ mt: 8, mb: 4 }} id='scills'>
       <Typography variant='h4' marked='center' align='center' component='h2'>
@@ -132,7 +148,7 @@ export default function ProductCategories() {
           flipDirection='horizontal'
           style={FlippyStyle}
         >
-          <React.Fragment>
+          <ImageIconButton2>
             <FrontSide
               style={{
                 backgroundImage: `url(${jsImg})`,
@@ -140,6 +156,7 @@ export default function ProductCategories() {
                 padding: 0,
               }}
             >
+              <ImageBackdrop className='imageBackdrop' />
               <ImageIconButton key={"JavaScript"} style={{}}>
                 <Box sx={{}}>
                   <Typography
@@ -178,7 +195,7 @@ export default function ProductCategories() {
                 (BACK SIDE)
               </span>
             </BackSide>
-          </React.Fragment>
+          </ImageIconButton2>
         </Flippy>
         {images.map((image) => (
           <ImageIconButton
@@ -199,6 +216,7 @@ export default function ProductCategories() {
                 backgroundImage: `url(${image.url})`,
               }}
             />
+
             <ImageBackdrop className='imageBackdrop' />
             <Box
               sx={{
