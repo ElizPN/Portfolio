@@ -137,6 +137,7 @@ export default function ProductCategories() {
               style={{
                 backgroundImage: `url(${jsImg})`,
                 backgroundPosition: "center",
+                padding: 0,
               }}
             >
               <ImageIconButton key={"JavaScript"} style={{}}>
