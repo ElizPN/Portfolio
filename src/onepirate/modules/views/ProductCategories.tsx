@@ -80,6 +80,7 @@ const ImageIconButton2 = styled(ButtonBase)(({ theme }) => ({
 }));
 
 const StyledFlippy = styled(Flippy)(({ theme }) => ({
+  color: "#FFF",
   [theme.breakpoints.down("md")]: {
     width: "100% !important",
     height: 100,
@@ -173,7 +174,6 @@ export default function ProductCategories() {
             flipDirection='horizontal'
             style={{
               width: image.width,
-              color: "#FFF",
             }}
           >
             <ImageIconButton2>
@@ -200,23 +200,9 @@ export default function ProductCategories() {
                   </Box>
                 </ImageIconButton>
               </FrontSide>
-
               <StyledBackSide>
                 <h1 style={{ color: "black" }}>{image.backSideTitle}</h1>
-
                 {image.backSideText}
-                {/* <span
-                  style={{
-                    fontSize: "12px",
-                    position: "absolute",
-                    bottom: "10px",
-                    width: "100%",
-                  }}
-                >
-                  I flip 'horizontal'ly on click
-                  <br />
-                  (BACK SIDE)
-                </span> */}
               </StyledBackSide>
             </ImageIconButton2>
           </StyledFlippy>
