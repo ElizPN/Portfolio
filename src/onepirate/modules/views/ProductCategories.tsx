@@ -88,6 +88,13 @@ const ImageIconButton2 = styled(ButtonBase)(({ theme }) => ({
   },
 }));
 
+const StyledFlippy = styled(Flippy)(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    width: "100% !important",
+    height: 100,
+  },
+}));
+
 const images = [
   {
     url: jsImg,
@@ -144,7 +151,7 @@ export default function ProductCategories() {
       </Typography>
       <Box sx={{ mt: 8, display: "flex", flexWrap: "wrap" }}>
         {images.map((image) => (
-          <Flippy
+          <StyledFlippy
             flipOnClick={true}
             flipDirection='horizontal'
             style={{
@@ -161,7 +168,7 @@ export default function ProductCategories() {
                   backgroundSize: "cover",
                 }}
               >
-                <ImageBackdrop className='imageBackdrop' />
+                <ImageBackdrop />
                 <ImageIconButton key={image.title} style={{}}>
                   <Box sx={{}}>
                     <Typography
@@ -201,7 +208,7 @@ export default function ProductCategories() {
                 </span>
               </BackSide>
             </ImageIconButton2>
-          </Flippy>
+          </StyledFlippy>
         ))}
 
         {images.map((image) => (
@@ -224,7 +231,7 @@ export default function ProductCategories() {
               }}
             />
 
-            <ImageBackdrop className='imageBackdrop' />
+            <ImageBackdrop />
             <Box
               sx={{
                 position: "absolute",
