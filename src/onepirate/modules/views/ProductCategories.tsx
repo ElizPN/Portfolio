@@ -101,11 +101,6 @@ const images = [
     url: jsImg,
     title: "JavaScript",
     width: "40%",
-    backSidebackGround: {
-      background: "linear-gradient(160deg, black, yellow)",
-    },
-
-    backSideTitle: "JavaScript",
     backSideText: (
       <div>
         <div>
@@ -123,41 +118,137 @@ const images = [
     url: reactImg,
     title: "React",
     width: "20%",
+    backSideText: (
+      <div>
+        <div>
+          <p>Data types</p>
+          <p>Object properties, their configuration </p>
+          <p>Promises</p>
+          <p>Classes</p>
+          <p>Modules</p>
+          <p>ES6</p>
+        </div>
+      </div>
+    ),
   },
   {
     url: tsImg,
     title: "TypeScript",
     width: "40%",
+    backSideText: (
+      <div>
+        <div>
+          <p>Data types</p>
+          <p>Object properties, their configuration </p>
+          <p>Promises</p>
+          <p>Classes</p>
+          <p>Modules</p>
+          <p>ES6</p>
+        </div>
+      </div>
+    ),
   },
   {
     url: reduxImg,
     title: "Redux",
     width: "38%",
+    backSideText: (
+      <div>
+        <div>
+          <p>Data types</p>
+          <p>Object properties, their configuration </p>
+          <p>Promises</p>
+          <p>Classes</p>
+          <p>Modules</p>
+          <p>ES6</p>
+        </div>
+      </div>
+    ),
   },
   {
     url: vueImg,
     title: "Vue.js",
     width: "38%",
+    backSideText: (
+      <div>
+        <div>
+          <p>Data types</p>
+          <p>Object properties, their configuration </p>
+          <p>Promises</p>
+          <p>Classes</p>
+          <p>Modules</p>
+          <p>ES6</p>
+        </div>
+      </div>
+    ),
   },
   {
     url: muiImage,
     title: "Material UI",
     width: "24%",
+    backSideText: (
+      <div>
+        <div>
+          <p>Data types</p>
+          <p>Object properties, their configuration </p>
+          <p>Promises</p>
+          <p>Classes</p>
+          <p>Modules</p>
+          <p>ES6</p>
+        </div>
+      </div>
+    ),
   },
   {
     url: phaserImage,
     title: "Phaser",
     width: "40%",
+    backSideText: (
+      <div>
+        <div>
+          <p>Data types</p>
+          <p>Object properties, their configuration </p>
+          <p>Promises</p>
+          <p>Classes</p>
+          <p>Modules</p>
+          <p>ES6</p>
+        </div>
+      </div>
+    ),
   },
   {
     url: contentfulImg,
     title: "Contentful",
     width: "20%",
+    backSideText: (
+      <div>
+        <div>
+          <p>Data types</p>
+          <p>Object properties, their configuration </p>
+          <p>Promises</p>
+          <p>Classes</p>
+          <p>Modules</p>
+          <p>ES6</p>
+        </div>
+      </div>
+    ),
   },
   {
     url: htmlCssImg,
     title: "HTML && CSS",
     width: "40%",
+    backSideText: (
+      <div>
+        <div>
+          <p>Data types</p>
+          <p>Object properties, their configuration </p>
+          <p>Promises</p>
+          <p>Classes</p>
+          <p>Modules</p>
+          <p>ES6</p>
+        </div>
+      </div>
+    ),
   },
 ];
 
@@ -201,7 +292,7 @@ export default function ProductCategories() {
                 </ImageIconButton>
               </FrontSide>
               <StyledBackSide>
-                <h1 style={{ color: "black" }}>{image.backSideTitle}</h1>
+                <h1 style={{ color: "black" }}>{image.title}</h1>
                 {image.backSideText}
               </StyledBackSide>
             </ImageIconButton2>
