@@ -15,15 +15,6 @@ import contentfulImg from "./images/contentful.jpg";
 import htmlCssImg from "./images/html-css2.jpg";
 import Flippy, { FrontSide, BackSide } from "react-flippy";
 
-const FlippyStyle = {
-  width: "40%",
-  // textAlign: "center",
-  color: "#FFF",
-  // fontFamily: "sans-serif",
-  // fontSize: "30px",
-  // justifyContent: "center",
-};
-
 const ImageBackdrop = styled("div")(({ theme }) => ({
   position: "absolute",
   left: 0,
@@ -94,12 +85,38 @@ const StyledFlippy = styled(Flippy)(({ theme }) => ({
     height: 100,
   },
 }));
+const StyledBackSide = styled(BackSide)(({ theme }) => ({
+  backgroundColor: "#175852",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  flexDirection: "column",
+  fontSize: 20,
+  background: "linear-gradient(160deg, black, yellow)",
+}));
 
 const images = [
   {
     url: jsImg,
     title: "JavaScript",
     width: "40%",
+    backSidebackGround: {
+      background: "linear-gradient(160deg, black, yellow)",
+    },
+
+    backSideTitle: "JavaScript",
+    backSideText: (
+      <div>
+        <div>
+          <p>Data types</p>
+          <p>Object properties, their configuration </p>
+          <p>Promises</p>
+          <p>Classes</p>
+          <p>Modules</p>
+          <p>ES6</p>
+        </div>
+      </div>
+    ),
   },
   {
     url: reactImg,
@@ -184,17 +201,11 @@ export default function ProductCategories() {
                 </ImageIconButton>
               </FrontSide>
 
-              <BackSide
-                style={{
-                  backgroundColor: "#175852",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  flexDirection: "column",
-                }}
-              >
-                ROCKS
-                <span
+              <StyledBackSide>
+                <h1 style={{ color: "black" }}>{image.backSideTitle}</h1>
+
+                {image.backSideText}
+                {/* <span
                   style={{
                     fontSize: "12px",
                     position: "absolute",
@@ -205,8 +216,8 @@ export default function ProductCategories() {
                   I flip 'horizontal'ly on click
                   <br />
                   (BACK SIDE)
-                </span>
-              </BackSide>
+                </span> */}
+              </StyledBackSide>
             </ImageIconButton2>
           </StyledFlippy>
         ))}
