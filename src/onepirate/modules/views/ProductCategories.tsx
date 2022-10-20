@@ -86,6 +86,7 @@ const StyledFlippy = styled(Flippy)(({ theme }) => ({
     height: 100,
   },
 }));
+
 const StyledBackSide = styled(BackSide)(({ theme }) => ({
   backgroundColor: "#175852",
   display: "flex",
@@ -276,7 +277,7 @@ export default function ProductCategories() {
                   backgroundSize: "cover",
                 }}
               >
-                <ImageBackdrop />
+                <ImageBackdrop className='imageBackdrop' />
                 <ImageIconButton key={image.title} style={{}}>
                   <Box sx={{}}>
                     <Typography
