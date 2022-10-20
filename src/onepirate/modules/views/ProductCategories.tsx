@@ -18,7 +18,7 @@ import Flippy, { FrontSide, BackSide } from "react-flippy";
 const ImageBackdrop = styled("div")(({ theme }) => ({
   position: "absolute",
   left: 0,
-  right: 0,
+  right: -1,
   top: 0,
   bottom: 0,
   background: "#000",
@@ -122,12 +122,11 @@ const images = [
     backSideText: (
       <div>
         <div>
-          <p>Data types</p>
-          <p>Object properties, their configuration </p>
-          <p>Promises</p>
-          <p>Classes</p>
-          <p>Modules</p>
-          <p>ES6</p>
+          <p>Classes and functional components</p>
+          <p>Hooks</p>
+          <p>Props</p>
+          <p>Data structures: objects, arrays of objects </p>
+          <p>Conditional rendering</p>
         </div>
       </div>
     ),
@@ -139,12 +138,12 @@ const images = [
     backSideText: (
       <div>
         <div>
-          <p>Data types</p>
-          <p>Object properties, their configuration </p>
-          <p>Promises</p>
-          <p>Classes</p>
-          <p>Modules</p>
-          <p>ES6</p>
+          <p>Types and interfaces</p>
+          <p>Function types </p>
+          <p>Enums </p>
+          <p>Aliases</p>
+          <p>Unions</p>
+          <p>Generics</p>
         </div>
       </div>
     ),
@@ -156,12 +155,11 @@ const images = [
     backSideText: (
       <div>
         <div>
-          <p>Data types</p>
-          <p>Object properties, their configuration </p>
-          <p>Promises</p>
-          <p>Classes</p>
-          <p>Modules</p>
-          <p>ES6</p>
+          <p>Global store</p>
+          <p>States and actions</p>
+          <p>Redusers</p>
+          <p>mapStateToProps</p>
+          <p>mapDispatchToProps</p>
         </div>
       </div>
     ),
@@ -241,12 +239,11 @@ const images = [
     backSideText: (
       <div>
         <div>
-          <p>Data types</p>
-          <p>Object properties, their configuration </p>
-          <p>Promises</p>
-          <p>Classes</p>
-          <p>Modules</p>
-          <p>ES6</p>
+          <p>Applied Visual Design</p>
+          <p>Applied Accessibility</p>
+          <p>Responsive Web Design Principles</p>
+          <p>Flexbox</p>
+          <p>Grid</p>
         </div>
       </div>
     ),
