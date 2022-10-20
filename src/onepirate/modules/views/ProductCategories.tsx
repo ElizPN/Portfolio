@@ -18,7 +18,7 @@ import Flippy, { FrontSide, BackSide } from "react-flippy";
 const ImageBackdrop = styled("div")(({ theme }) => ({
   position: "absolute",
   left: 0,
-  right: -1,
+  right: 0,
   top: 0,
   bottom: 0,
   background: "#000",
@@ -97,7 +97,7 @@ const StyledBackSide = styled(BackSide)(({ theme }) => ({
   background: "linear-gradient(160deg, black, yellow)",
 }));
 
-const images = [
+const skills = [
   {
     url: jsImg,
     title: "JavaScript",
@@ -256,8 +256,15 @@ export default function ProductCategories() {
       <Typography variant='h4' marked='center' align='center' component='h2'>
         Skills
       </Typography>
-      <Box sx={{ mt: 8, display: "flex", flexWrap: "wrap" }}>
-        {images.map((image) => (
+      <Box
+        sx={{
+          mt: 8,
+          display: "flex",
+          flexWrap: "wrap",
+          backgroundColor: "black",
+        }}
+      >
+        {skills.map((image) => (
           <StyledFlippy
             flipOnClick={true}
             flipDirection='horizontal'
@@ -275,8 +282,8 @@ export default function ProductCategories() {
                 }}
               >
                 <ImageBackdrop className='imageBackdrop' />
-                <ImageIconButton key={image.title} style={{}}>
-                  <Box sx={{}}>
+                <ImageIconButton key={image.title}>
+                  <Box>
                     <Typography
                       component='h3'
                       variant='h6'
@@ -297,7 +304,7 @@ export default function ProductCategories() {
           </StyledFlippy>
         ))}
 
-        {images.map((image) => (
+        {skills.map((image) => (
           <ImageIconButton
             key={image.title}
             style={{
