@@ -22,7 +22,7 @@ interface Props {
 }
 
 const drawerWidth = 240;
-// const navItems = ["About me", "Projects", "Skills", "Contacts"];
+
 const navNewItems = [
   { name: "About me", link: "#aboutMe" },
   { name: "Projects", link: "#projects" },
@@ -72,7 +72,11 @@ export default function DrawerAppBar(props: Props) {
 
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navNewItems.map((item) => (
-              <Button key={item.name} sx={{ color: "#fff" }} href={item.link}>
+              <Button
+                key={item.name}
+                sx={{ color: "#fff", fontSize: 20, letterSpacing: 1 }}
+                href={item.link}
+              >
                 {item.name}
               </Button>
             ))}
@@ -86,7 +90,7 @@ export default function DrawerAppBar(props: Props) {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true,
           }}
           sx={{
             display: { xs: "block", sm: "none" },
