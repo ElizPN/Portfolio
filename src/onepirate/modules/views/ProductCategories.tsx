@@ -104,14 +104,12 @@ const skills = [
     width: "40%",
     backSideText: (
       <div>
-        <div>
-          <p>Data types</p>
-          <p>Object properties, their configuration </p>
-          <p>Promises</p>
-          <p>Classes</p>
-          <p>Modules</p>
-          <p>ES6</p>
-        </div>
+        <p>Data types</p>
+        <p>Object properties, their configuration </p>
+        <p>Promises</p>
+        <p>Classes</p>
+        <p>Modules</p>
+        <p>ES6</p>
       </div>
     ),
   },
@@ -121,13 +119,11 @@ const skills = [
     width: "20%",
     backSideText: (
       <div>
-        <div>
-          <p>Classes and functional components</p>
-          <p>Hooks</p>
-          <p>Props</p>
-          <p>Data structures: objects, arrays of objects </p>
-          <p>Conditional rendering</p>
-        </div>
+        <p>Classes and functional components</p>
+        <p>Hooks</p>
+        <p>Props</p>
+        <p>Data structures: objects, arrays of objects </p>
+        <p>Conditional rendering</p>
       </div>
     ),
   },
@@ -137,14 +133,12 @@ const skills = [
     width: "40%",
     backSideText: (
       <div>
-        <div>
-          <p>Types and interfaces</p>
-          <p>Function types </p>
-          <p>Enums </p>
-          <p>Aliases</p>
-          <p>Unions</p>
-          <p>Generics</p>
-        </div>
+        <p>Types and interfaces</p>
+        <p>Function types </p>
+        <p>Enums </p>
+        <p>Aliases</p>
+        <p>Unions</p>
+        <p>Generics</p>
       </div>
     ),
   },
@@ -154,13 +148,11 @@ const skills = [
     width: "38%",
     backSideText: (
       <div>
-        <div>
-          <p>Global store</p>
-          <p>States and actions</p>
-          <p>Redusers</p>
-          <p>mapStateToProps</p>
-          <p>mapDispatchToProps</p>
-        </div>
+        <p>Global store</p>
+        <p>States and actions</p>
+        <p>Redusers</p>
+        <p>mapStateToProps</p>
+        <p>mapDispatchToProps</p>
       </div>
     ),
   },
@@ -170,14 +162,12 @@ const skills = [
     width: "38%",
     backSideText: (
       <div>
-        <div>
-          <p>Data types</p>
-          <p>Object properties, their configuration </p>
-          <p>Promises</p>
-          <p>Classes</p>
-          <p>Modules</p>
-          <p>ES6</p>
-        </div>
+        <p>Data types</p>
+        <p>Object properties, their configuration </p>
+        <p>Promises</p>
+        <p>Classes</p>
+        <p>Modules</p>
+        <p>ES6</p>
       </div>
     ),
   },
@@ -187,14 +177,9 @@ const skills = [
     width: "24%",
     backSideText: (
       <div>
-        <div>
-          <p>Data types</p>
-          <p>Object properties, their configuration </p>
-          <p>Promises</p>
-          <p>Classes</p>
-          <p>Modules</p>
-          <p>ES6</p>
-        </div>
+        <p>Reusing components</p>
+        <p>Applying custom styles</p>
+        <p>Custom theme</p>
       </div>
     ),
   },
@@ -204,14 +189,12 @@ const skills = [
     width: "40%",
     backSideText: (
       <div>
-        <div>
-          <p>Data types</p>
-          <p>Object properties, their configuration </p>
-          <p>Promises</p>
-          <p>Classes</p>
-          <p>Modules</p>
-          <p>ES6</p>
-        </div>
+        <p>Data types</p>
+        <p>Object properties, their configuration </p>
+        <p>Promises</p>
+        <p>Classes</p>
+        <p>Modules</p>
+        <p>ES6</p>
       </div>
     ),
   },
@@ -221,14 +204,11 @@ const skills = [
     width: "20%",
     backSideText: (
       <div>
-        <div>
-          <p>Data types</p>
-          <p>Object properties, their configuration </p>
-          <p>Promises</p>
-          <p>Classes</p>
-          <p>Modules</p>
-          <p>ES6</p>
-        </div>
+        <p>Creating data model</p>
+        <p>Add/edit content</p>
+        <p>Using contentful API</p>
+        <p>Fetch content</p>
+        <p>Filters</p>
       </div>
     ),
   },
@@ -238,13 +218,11 @@ const skills = [
     width: "40%",
     backSideText: (
       <div>
-        <div>
-          <p>Applied Visual Design</p>
-          <p>Applied Accessibility</p>
-          <p>Responsive Web Design Principles</p>
-          <p>Flexbox</p>
-          <p>Grid</p>
-        </div>
+        <p>Applied Visual Design</p>
+        <p>Applied Accessibility</p>
+        <p>Responsive Web Design Principles</p>
+        <p>Flexbox</p>
+        <p>Grid</p>
       </div>
     ),
   },
