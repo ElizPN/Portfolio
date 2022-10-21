@@ -74,7 +74,12 @@ export default function DrawerAppBar(props: Props) {
             {navNewItems.map((item) => (
               <Button
                 key={item.name}
-                sx={{ color: "#fff", fontSize: 20, letterSpacing: 1 }}
+                sx={{
+                  color: "#fff",
+                  fontSize: 20,
+                  letterSpacing: 1,
+                  pr: 2,
+                }}
                 href={item.link}
               >
                 {item.name}
