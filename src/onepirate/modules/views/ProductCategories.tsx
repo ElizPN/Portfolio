@@ -88,7 +88,6 @@ const StyledFlippy = styled(Flippy)(({ theme }) => ({
 }));
 
 const StyledBackSide = styled(BackSide)(({ theme }) => ({
-  // backgroundColor: "#175852",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
@@ -281,53 +280,6 @@ export default function ProductCategories() {
             </ImageIconButton2>
           </StyledFlippy>
         ))}
-
-        {/* {skills.map((image) => (
-          <ImageIconButton
-            key={image.title}
-            style={{
-              width: image.width,
-            }}
-          >
-            <Box
-              sx={{
-                position: "absolute",
-                left: 0,
-                right: 0,
-                top: 0,
-                bottom: 0,
-                backgroundSize: "cover",
-                backgroundPosition: "center 40%",
-                backgroundImage: `url(${image.url})`,
-              }}
-            />
-
-            <ImageBackdrop />
-            <Box
-              sx={{
-                position: "absolute",
-                left: 0,
-                right: 0,
-                top: 0,
-                bottom: 0,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                color: "common.white",
-              }}
-            >
-              <Typography
-                component='h3'
-                variant='h6'
-                color='inherit'
-                className='imageTitle'
-              >
-                {image.title}
-                <div className='imageMarked' />
-              </Typography>
-            </Box>
-          </ImageIconButton>
-        ))} */}
       </Box>
     </Container>
   );
