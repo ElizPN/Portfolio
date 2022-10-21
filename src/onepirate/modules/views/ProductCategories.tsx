@@ -88,13 +88,13 @@ const StyledFlippy = styled(Flippy)(({ theme }) => ({
 }));
 
 const StyledBackSide = styled(BackSide)(({ theme }) => ({
-  backgroundColor: "#175852",
+  // backgroundColor: "#175852",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
   flexDirection: "column",
   fontSize: 20,
-  background: "linear-gradient(160deg, black, yellow)",
+  background: "linear-gradient(160deg, #c0392b, #8e44ad )",
 }));
 
 const skills = [
@@ -275,14 +275,14 @@ export default function ProductCategories() {
                 </ImageIconButton>
               </FrontSide>
               <StyledBackSide>
-                <h1 style={{ color: "black" }}>{image.title}</h1>
+                <h1 style={{ color: "#000039" }}>{image.title}</h1>
                 {image.backSideText}
               </StyledBackSide>
             </ImageIconButton2>
           </StyledFlippy>
         ))}
 
-        {skills.map((image) => (
+        {/* {skills.map((image) => (
           <ImageIconButton
             key={image.title}
             style={{
@@ -327,7 +327,7 @@ export default function ProductCategories() {
               </Typography>
             </Box>
           </ImageIconButton>
-        ))}
+        ))} */}
       </Box>
     </Container>
   );
