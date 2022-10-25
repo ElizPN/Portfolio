@@ -58,7 +58,7 @@ function ProductValues() {
             <Box sx={item}>
               <Typography variant='h6' sx={{ my: 5 }}>
                 <Link
-                  href='https://elizpn.github.io/react-typical-challenges/'
+                  href='https://elizpn.github.io/elizpn.github.io-duck-game/'
                   sx={{ textDecoration: "none" }}
                 >
                   <Box
