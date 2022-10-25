@@ -227,7 +227,7 @@ const skills = [
   },
 ];
 
-export default function ProductCategories() {
+export default function Skills() {
   return (
     <Container component='section' sx={{ mt: 8, mb: 4 }} id='scills'>
       <Typography variant='h4' marked='center' align='center' component='h2'>

@@ -27,12 +27,12 @@ const Background = styled(Box)({
   zIndex: -2,
 });
 
-interface ProductHeroLayoutProps {
+interface AboutMeLayoutProps {
   sxBackground: SxProps<Theme>;
 }
 
-export default function ProductHeroLayout(
-  props: React.HTMLAttributes<HTMLDivElement> & ProductHeroLayoutProps
+export default function AboutMeLayout(
+  props: React.HTMLAttributes<HTMLDivElement> & AboutMeLayoutProps
 ) {
   const { sxBackground, children } = props;
 

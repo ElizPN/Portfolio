@@ -2,12 +2,12 @@ import * as React from "react";
 import Button from "../components/Button";
 import Typography from "../components/Typography";
 import ActionAreaCard from "./ActionAreaCard";
-import ProductHeroLayout from "./ProductHeroLayout";
+import AboutMeLayout from "./AboutMeLayout";
 import backgroundImage from "./images/woman-5653501.jpeg";
 
-export default function ProductHero(): JSX.Element {
+export default function AboutMe(): JSX.Element {
   return (
-    <ProductHeroLayout
+    <AboutMeLayout
       sxBackground={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundColor: "#7fc7d9", // Average color of the background image.
@@ -33,6 +33,6 @@ export default function ProductHero(): JSX.Element {
       </Typography>
 
       <ActionAreaCard></ActionAreaCard>
-    </ProductHeroLayout>
+    </AboutMeLayout>
   );
 }

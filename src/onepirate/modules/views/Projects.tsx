@@ -17,7 +17,7 @@ const item: SxProps<Theme> = {
   px: 5,
 };
 
-function ProductValues() {
+function Projects() {
   return (
     <Box
       component='section'
@@ -105,4 +105,4 @@ function ProductValues() {
   );
 }
 
-export default ProductValues;
+export default Projects;
