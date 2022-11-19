@@ -8,7 +8,7 @@ import Typography from "../components/Typography";
 import Link from "@mui/material/Link";
 import reactProjectImg from "./images/ts-react-redux.jpeg";
 import duckImg from "./images/ducks.jpg";
-import honeyImg from "./images/bee.jpg";
+import toDoListImg from "./images/to-do-list.png";
 
 const item: SxProps<Theme> = {
   display: "flex",
@@ -80,22 +80,23 @@ function Projects() {
             <Box sx={item}>
               <Typography variant='h6' sx={{ my: 5 }}>
                 <Link
-                  href='https://elizpn.github.io/react-typical-challenges/'
+                  href='https://elizpn.github.io/todo-list/'
                   sx={{ textDecoration: "none" }}
                 >
                   {" "}
                   <Box
                     component='img'
-                    src={honeyImg}
+                    src={toDoListImg}
                     alt='clock'
                     sx={{ height: 160, width: 300 }}
                   />
-                  Honey website
+                  To Do List
                 </Link>
               </Typography>
               <Typography variant='h5'>
-                Website where you can find a lot of information abou different
-                types of honey and its benefits.
+                You don`t have to memorize everything you need to do this week
+                or for the current month. Just use the ToDoList App to organize
+                your life.
               </Typography>
             </Box>
           </Grid>
