@@ -1,7 +1,7 @@
 
 # `My Portfolio`
 
-Here you will find more information about me and my skills. When you scroll down you will see my other projects. If you deside you can contact me by email. 
+Here you will find more information about me and my skills. When you scroll down you will see my other projects. If you decide you can always contact me by email. 
 
 Deployed to GitHub Pages: https://elizpn.github.io/Portfolio/
 
