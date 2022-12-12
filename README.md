@@ -23,6 +23,9 @@ Deployed to GitHub Pages: https://elizpn.github.io/Portfolio/
 ### Desktop (macOS, Chrome):
 
   <img src="./public/screenshots/about.png" title="About"/>
+    <img src="./public/screenshots/skills.png" title="Skills"/>
+        <img src="./public/screenshots/projects.png" title="Projects"/>
+            <img src="./public/screenshots/full_screen.png" title="Full"/>
 
 ## Development
 
