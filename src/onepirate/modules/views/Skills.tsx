@@ -188,12 +188,10 @@ const skills = [
     width: "40%",
     backSideText: (
       <div>
-        <p>Data types</p>
-        <p>Object properties, their configuration </p>
-        <p>Promises</p>
-        <p>Classes</p>
-        <p>Modules</p>
-        <p>ES6</p>
+        <p>Creating Preloaders</p>
+        <p>Adding physics </p>
+        <p>Adding keybord events</p>
+        <p>Work with EventEmitter</p>
       </div>
     ),
   },
