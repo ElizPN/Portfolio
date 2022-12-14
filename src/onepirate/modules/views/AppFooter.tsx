@@ -10,17 +10,6 @@ import { fontWeight } from "@mui/system";
 
 // MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-1ld3b9g-MuiGrid-root
 
-function Copyright() {
-  return (
-    <React.Fragment>
-      {"© "}
-      <Link color='inherit' href='https://mui.com/'>
-        Your Website
-      </Link>{" "}
-      {new Date().getFullYear()}
-    </React.Fragment>
-  );
-}
 
 const iconStyle = {
   display: "flex",
