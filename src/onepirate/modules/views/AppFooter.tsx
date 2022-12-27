@@ -6,10 +6,8 @@ import Container from "@mui/material/Container";
 import Typography from "../components/Typography";
 import githubLogo from "./images/githubLogo2.png";
 import linkedinLogo from "./images/linkedinLogo.png";
-import { fontWeight } from "@mui/system";
 
 // MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-5 css-1ld3b9g-MuiGrid-root
-
 
 const iconStyle = {
   display: "flex",
