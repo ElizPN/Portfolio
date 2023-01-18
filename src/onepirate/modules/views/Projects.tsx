@@ -9,6 +9,7 @@ import Link from "@mui/material/Link";
 import reactProjectImg from "./images/ts-react-redux.jpeg";
 import duckImg from "./images/ducks.jpg";
 import toDoListImg from "./images/to-do-list.png";
+import weatherAppImg from "./images/weather-app.png";
 
 const item: SxProps<Theme> = {
   display: "flex",
@@ -98,6 +99,26 @@ function Projects() {
                 or for the current month. Just use the ToDoList App to organize
                 your life.
               </Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Box sx={item}>
+              <Typography variant='h6' sx={{ my: 5 }}>
+                <Link
+                  href='https://elizpn.github.io/Weather-App-React/'
+                  sx={{ textDecoration: "none" }}
+                >
+                  {" "}
+                  <Box
+                    component='img'
+                    src={weatherAppImg}
+                    alt='clock'
+                    sx={{ height: 160, width: 300 }}
+                  />
+                  Weather App
+                </Link>
+              </Typography>
+              <Typography variant='h5'>kokoo</Typography>
             </Box>
           </Grid>
         </Grid>
