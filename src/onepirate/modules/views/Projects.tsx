@@ -10,6 +10,7 @@ import reactProjectImg from "./images/ts-react-redux.jpeg";
 import duckImg from "./images/ducks.jpg";
 import toDoListImg from "./images/to-do-list.png";
 import weatherAppImg from "./images/weather-app.png";
+import balcosmosImg from "./images/balcosmos.png";
 
 const item: SxProps<Theme> = {
   display: "flex",
@@ -118,7 +119,35 @@ function Projects() {
                   Weather App
                 </Link>
               </Typography>
-              <Typography variant='h5'>kokoo</Typography>
+              <Typography variant='h5'>
+                {" "}
+                With this app you can check the weather in any city in the
+                world. The icons in the Weather app indicate different weather
+                conditions.
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Box sx={item}>
+              <Typography variant='h6' sx={{ my: 5 }}>
+                <Link
+                  href='https://balcosmos.com/'
+                  sx={{ textDecoration: "none" }}
+                >
+                  {" "}
+                  <Box
+                    component='img'
+                    src={balcosmosImg}
+                    alt='clock'
+                    sx={{ height: 160, width: 300 }}
+                  />
+                  Balcosmos oficial website
+                </Link>
+              </Typography>
+              <Typography variant='h5'>
+                {" "}
+                Commercial project. Balcosmos Music Producer Website.
+              </Typography>
             </Box>
           </Grid>
         </Grid>
