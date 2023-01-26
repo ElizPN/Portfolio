@@ -18,6 +18,11 @@ Deployed to GitHub Pages: https://elizpn.github.io/Portfolio/
 ## Planned Improvements: 
 - Add integration tests and End-to-End tests.
 
+
+### Demo: 
+  <img src="./public/portfolio.gif" title="Demo"/>
+
+
 ## Screenshots:
 
 ### Desktop (macOS, Chrome):
