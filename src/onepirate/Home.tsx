@@ -11,8 +11,8 @@ function Index() {
     <React.Fragment>
       <AppAppBar />
       <AboutMe />
-      <Projects />
       <Skills />
+      <Projects />
       <AppFooter />
     </React.Fragment>
   );
