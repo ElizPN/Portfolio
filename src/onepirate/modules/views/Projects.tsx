@@ -6,11 +6,12 @@ import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Typography from "../components/Typography";
 import Link from "@mui/material/Link";
-import reactProjectImg from "./images/ts-react-redux.jpeg";
+import reactProjectImg from "./images/rtc.jpeg";
 import duckImg from "./images/ducks.jpg";
 import toDoListImg from "./images/to-do-list.png";
 import weatherAppImg from "./images/weather-app.png";
 import balcosmosImg from "./images/balcosmos.png";
+import aprilImg from "./images/april.jpeg";
 
 const item: SxProps<Theme> = {
   display: "flex",
@@ -60,21 +61,22 @@ function Projects() {
             <Box sx={item}>
               <Typography variant='h6' sx={{ my: 5 }}>
                 <Link
-                  href='https://elizpn.github.io/elizpn.github.io-duck-game/'
+                  href='https://elizpn.github.io/Weather-App-React/'
                   sx={{ textDecoration: "none" }}
                 >
                   <Box
                     component='img'
-                    src={duckImg}
-                    alt='graph'
+                    src={weatherAppImg}
+                    alt='clock'
                     sx={{ height: 160, width: 300 }}
                   />
-                  Duck game
+                  Weather App
                 </Link>
               </Typography>
               <Typography variant='h5'>
-                This is my first game with hungry duck. Her goal - to eat bread
-                before her competitor will do this.
+                With this app you can check the weather in any city in the
+                world. The icons in the Weather app indicate different weather
+                conditions.
               </Typography>
             </Box>
           </Grid>
@@ -85,7 +87,6 @@ function Projects() {
                   href='https://elizpn.github.io/todo-list/'
                   sx={{ textDecoration: "none" }}
                 >
-                  {" "}
                   <Box
                     component='img'
                     src={toDoListImg}
@@ -106,24 +107,21 @@ function Projects() {
             <Box sx={item}>
               <Typography variant='h6' sx={{ my: 5 }}>
                 <Link
-                  href='https://elizpn.github.io/Weather-App-React/'
+                  href='https://elizpn.github.io/elizpn.github.io-duck-game/'
                   sx={{ textDecoration: "none" }}
                 >
-                  {" "}
                   <Box
                     component='img'
-                    src={weatherAppImg}
-                    alt='clock'
+                    src={duckImg}
+                    alt='graph'
                     sx={{ height: 160, width: 300 }}
                   />
-                  Weather App
+                  Duck game
                 </Link>
               </Typography>
               <Typography variant='h5'>
-                {" "}
-                With this app you can check the weather in any city in the
-                world. The icons in the Weather app indicate different weather
-                conditions.
+                This is my first game with hungry duck. Her goal - to eat bread
+                before her competitor will do this.
               </Typography>
             </Box>
           </Grid>
@@ -147,6 +145,31 @@ function Projects() {
               <Typography variant='h5'>
                 {" "}
                 Commercial project. Balcosmos Music Producer Website.
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Box sx={item}>
+              <Typography variant='h6' sx={{ my: 5 }}>
+                <Link
+                  href='https://elizpn.github.io/april/'
+                  sx={{ textDecoration: "none" }}
+                >
+                  {" "}
+                  <Box
+                    component='img'
+                    src={aprilImg}
+                    alt='clock'
+                    sx={{ height: 160, width: 300 }}
+                  />
+                  Choir April Website
+                </Link>
+              </Typography>
+              <Typography variant='h5'>
+                {" "}
+                The website showcases the Choir April group and their upcoming
+                performances. The website is fully responsive and includes
+                features such as filterable image gallery and a contact form.
               </Typography>
             </Box>
           </Grid>
