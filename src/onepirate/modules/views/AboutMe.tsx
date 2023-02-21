@@ -28,7 +28,7 @@ export default function AboutMe(): JSX.Element {
         variant='h5'
         sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
       >
-        TypeScript, JavaScript, React, Redux, Jest, CSS, HTML
+        TypeScript, JavaScript, React, Redux, Jest, Material UI
       </Typography>
 
       <ActionAreaCard></ActionAreaCard>
