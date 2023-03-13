@@ -12,6 +12,7 @@ import toDoListImg from "./images/to-do-list.png";
 import weatherAppImg from "./images/weather-app.png";
 import balcosmosImg from "./images/balcosmos.png";
 import aprilImg from "./images/april.jpeg";
+import swedishRadio from "./images/sw-radio.png";
 
 const item: SxProps<Theme> = {
   display: "flex",
@@ -44,6 +45,7 @@ function Projects() {
               <Box sx={item}>
                 <Typography variant='h6' sx={{ my: 5 }}>
                   <Link
+                    target='_blank'
                     href='https://elizpn.github.io/react-typical-challenges/'
                     sx={{ textDecoration: "none" }}
                   >
@@ -51,7 +53,7 @@ function Projects() {
                       component='img'
                       src={reactProjectImg}
                       alt='suitcase'
-                      sx={{ height: 160, width: 300 }}
+                      sx={{ height: 180, width: 300 }}
                     />
                     React typicall challenges
                   </Link>
@@ -66,6 +68,7 @@ function Projects() {
               <Box sx={item}>
                 <Typography variant='h6' sx={{ my: 5 }}>
                   <Link
+                    target='_blank'
                     href='https://elizpn.github.io/Weather-App-React/'
                     sx={{ textDecoration: "none" }}
                   >
@@ -73,7 +76,7 @@ function Projects() {
                       component='img'
                       src={weatherAppImg}
                       alt='clock'
-                      sx={{ height: 160, width: 300 }}
+                      sx={{ height: 180, width: 300 }}
                     />
                     Weather App
                   </Link>
@@ -89,6 +92,7 @@ function Projects() {
               <Box sx={item}>
                 <Typography variant='h6' sx={{ my: 5 }}>
                   <Link
+                    target='_blank'
                     href='https://elizpn.github.io/todo-list/'
                     sx={{ textDecoration: "none" }}
                   >
@@ -96,7 +100,7 @@ function Projects() {
                       component='img'
                       src={toDoListImg}
                       alt='clock'
-                      sx={{ height: 160, width: 300 }}
+                      sx={{ height: 180, width: 300 }}
                     />
                     To Do List
                   </Link>
@@ -112,6 +116,7 @@ function Projects() {
               <Box sx={item}>
                 <Typography variant='h6' sx={{ my: 5 }}>
                   <Link
+                    target='_blank'
                     href='https://elizpn.github.io/elizpn.github.io-duck-game/'
                     sx={{ textDecoration: "none" }}
                   >
@@ -119,7 +124,7 @@ function Projects() {
                       component='img'
                       src={duckImg}
                       alt='graph'
-                      sx={{ height: 160, width: 300 }}
+                      sx={{ height: 180, width: 300 }}
                     />
                     Duck game
                   </Link>
@@ -134,6 +139,7 @@ function Projects() {
               <Box sx={item}>
                 <Typography variant='h6' sx={{ my: 5 }}>
                   <Link
+                    target='_blank'
                     href='https://balcosmos.com/'
                     sx={{ textDecoration: "none" }}
                   >
@@ -142,7 +148,7 @@ function Projects() {
                       component='img'
                       src={balcosmosImg}
                       alt='clock'
-                      sx={{ height: 160, width: 300 }}
+                      sx={{ height: 180, width: 300 }}
                     />
                     Balcosmos oficial website
                   </Link>
@@ -157,6 +163,7 @@ function Projects() {
               <Box sx={item}>
                 <Typography variant='h6' sx={{ my: 5 }}>
                   <Link
+                    target='_blank'
                     href='https://elizpn.github.io/april/'
                     sx={{ textDecoration: "none" }}
                   >
@@ -165,7 +172,7 @@ function Projects() {
                       component='img'
                       src={aprilImg}
                       alt='clock'
-                      sx={{ height: 160, width: 300 }}
+                      sx={{ height: 180, width: 300 }}
                     />
                     Choir April Website
                   </Link>
@@ -175,6 +182,32 @@ function Projects() {
                   The website showcases the Choir April group and their upcoming
                   performances. The website is fully responsive and includes
                   features such as filterable image gallery and a contact form.
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <Box sx={item}>
+                <Typography variant='h6' sx={{ my: 5 }}>
+                  <Link
+                    target='_blank'
+                    href='https://elizpn.github.io/Swedish-radio/'
+                    sx={{ textDecoration: "none" }}
+                  >
+                    {" "}
+                    <Box
+                      component='img'
+                      src={swedishRadio}
+                      alt='clock'
+                      sx={{ height: 180, width: 300 }}
+                    />
+                    Swedish Radio Program App
+                  </Link>
+                </Typography>
+                <Typography variant='h5'>
+                  This web application allows users to browse and listen to
+                  various programs from Swedish Radio. Users can select a
+                  category to view programs in that category and click on a
+                  program to listen to it.
                 </Typography>
               </Box>
             </Grid>
