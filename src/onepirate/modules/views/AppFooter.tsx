@@ -26,7 +26,7 @@ export default function AppFooter() {
   return (
     <Typography
       component='footer'
-      sx={{ display: "flex", bgcolor: "secondary.light" }}
+      sx={{ display: "flex", bgcolor: "#B9D9EB" }}
       id='contacts'
     >
       <Container sx={{ my: 8, display: "flex" }}>
@@ -63,6 +63,7 @@ export default function AppFooter() {
                 href='mailto: romanovaliza9393@gmail.com'
                 target='_blank'
                 sx={{
+                  fontSize: "20px",
                   textDecoration: "none",
                   color: "rgb(43 36 36 / 87%)",
 
@@ -72,7 +73,7 @@ export default function AppFooter() {
                   },
                 }}
               >
-                Contact me by email: romanovaliza9393@gmail.com
+                romanovaliza9393@gmail.com
               </Link>
             </Grid>
           </Grid>
