@@ -172,6 +172,7 @@ const skills = [
     width: "24%",
     backSideText: (
       <div>
+        <p>Styled components</p>
         <p>Reusing components</p>
         <p>Applying custom styles</p>
         <p>Custom theme</p>
@@ -211,9 +212,7 @@ const skills = [
     width: "40%",
     backSideText: (
       <div>
-        <p>Applied Visual Design</p>
-        <p>Applied Accessibility</p>
-        <p>Responsive Web Design Principles</p>
+        <p>Responsive Web Design</p>
         <p>Flexbox</p>
         <p>Grid</p>
       </div>
