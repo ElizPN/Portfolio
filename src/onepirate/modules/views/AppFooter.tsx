@@ -44,7 +44,7 @@ export default function AppFooter() {
 
               <Box
                 component='a'
-                href='https://www.linkedin.com/in/yelyzaveta-romanova-8216a6214/'
+                href='https://www.linkedin.com/in/liza-romanova-8216a6214/'
                 target='_blank'
                 sx={iconStyle}
               >
