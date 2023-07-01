@@ -148,10 +148,10 @@ const skills = [
     backSideText: (
       <div>
         <p>Global store</p>
-        <p>States and actions</p>
         <p>Redusers</p>
-        <p>mapStateToProps</p>
-        <p>mapDispatchToProps</p>
+        <p>Dispatch</p>
+        <p>Slices</p>
+        <p>States, actions and payloads</p>
       </div>
     ),
   },
