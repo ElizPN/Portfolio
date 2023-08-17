@@ -13,7 +13,8 @@ import muiImage from "./images/mui.jpg";
 import phaserImage from "./images/phaser.jpg";
 import contentfulImg from "./images/contentful.jpg";
 import htmlCssImg from "./images/html-css2.jpg";
-import Flippy, { FrontSide, BackSide } from "react-flippy";
+  import Flippy, { FrontSide, BackSide } from "react-flippy";
+import { Grid } from "@mui/material";
 
 const ImageBackdrop = styled("div")(({ theme }) => ({
   position: "absolute",
@@ -83,7 +84,7 @@ const StyledFlippy = styled(Flippy)(({ theme }) => ({
   color: "#FFF",
   [theme.breakpoints.down("md")]: {
     width: "100% !important",
-    height: 100,
+    height: 350,
   },
 }));
 
@@ -100,7 +101,6 @@ const skills = [
   {
     url: jsImg,
     title: "JavaScript",
-    width: "40%",
     backSideText: (
       <div>
         <p>Data types</p>
@@ -115,7 +115,6 @@ const skills = [
   {
     url: reactImg,
     title: "React",
-    width: "20%",
     backSideText: (
       <div>
         <p>Classes and functional components</p>
@@ -129,7 +128,6 @@ const skills = [
   {
     url: tsImg,
     title: "TypeScript",
-    width: "40%",
     backSideText: (
       <div>
         <p>Types and interfaces</p>
@@ -144,7 +142,6 @@ const skills = [
   {
     url: reduxImg,
     title: "Redux",
-    width: "38%",
     backSideText: (
       <div>
         <p>Global store</p>
@@ -158,7 +155,6 @@ const skills = [
   {
     url: vueImg,
     title: "Vue.js",
-    width: "38%",
     backSideText: (
       <div>
         <p>Applying Bootstrap and custom styling</p>
@@ -169,7 +165,6 @@ const skills = [
   {
     url: muiImage,
     title: "Material UI",
-    width: "24%",
     backSideText: (
       <div>
         <p>Styled components</p>
@@ -182,7 +177,6 @@ const skills = [
   {
     url: phaserImage,
     title: "Phaser",
-    width: "40%",
     backSideText: (
       <div>
         <p>Creating Preloaders</p>
@@ -195,7 +189,6 @@ const skills = [
   {
     url: contentfulImg,
     title: "Contentful",
-    width: "20%",
     backSideText: (
       <div>
         <p>Creating data model</p>
@@ -209,7 +202,6 @@ const skills = [
   {
     url: htmlCssImg,
     title: "HTML && CSS",
-    width: "40%",
     backSideText: (
       <div>
         <p>Responsive Web Design</p>
@@ -226,20 +218,19 @@ export default function Skills() {
       <Typography variant='h4' marked='center' align='center' component='h2'>
         Skills
       </Typography>
-      <Box
+       <Grid container  
         sx={{
-          mt: 8,
-          display: "flex",
-          flexWrap: "wrap",
           backgroundColor: "black",
+          mt: 8,
         }}
       >
         {skills.map((image) => (
+          <Grid item xs={12} sm={6} md={4} lg={4}>
           <StyledFlippy
             flipOnClick={true}
             flipDirection='horizontal'
             style={{
-              width: image.width,
+              width: '100%',
             }}
           >
             <ImageIconButton2>
@@ -249,6 +240,7 @@ export default function Skills() {
                   backgroundPosition: "center",
                   padding: 0,
                   backgroundSize: "cover",
+                  height: 350
                 }}
               >
                 <ImageBackdrop className='imageBackdrop' />
@@ -272,8 +264,10 @@ export default function Skills() {
               </StyledBackSide>
             </ImageIconButton2>
           </StyledFlippy>
+          </Grid>
+
         ))}
-      </Box>
+      </Grid>
     </Container>
   );
 }
