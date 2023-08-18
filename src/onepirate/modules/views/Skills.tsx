@@ -94,8 +94,9 @@ const StyledBackSide = styled(BackSide)(({ theme }) => ({
   justifyContent: "center",
   flexDirection: "column",
   fontSize: 20,
-  background: "linear-gradient(160deg, #c0392b, #8e44ad )",
+  background: "linear-gradient(315deg, #000000 0%, #7f8c8d 74% )",
 }));
+
 
 const skills = [
   {
