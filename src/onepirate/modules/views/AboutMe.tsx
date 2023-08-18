@@ -19,7 +19,7 @@ export default function AboutMe(): JSX.Element {
         src={backgroundImage}
         alt='increase priority'
       />
-      <Typography color='inherit' align='center' variant='h2' marked='center'>
+      <Typography color='inherit' align='center' variant='h2' marked='center' mt={20}>
         Front End developer
       </Typography>
       <Typography
