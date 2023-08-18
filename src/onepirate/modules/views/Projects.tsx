@@ -46,6 +46,82 @@ function Projects() {
                 <Typography variant='h6' sx={{ my: 5 }}>
                   <Link
                     target='_blank'
+                    href='https://balcosmos.com/'
+                    sx={{ textDecoration: "none" }}
+                  >
+                    {" "}
+                    <Box
+                      component='img'
+                      src={balcosmosImg}
+                      alt='clock'
+                      sx={{ height: 180, width: 300 }}
+                    />
+                    Balcosmos oficial website
+                  </Link>
+                </Typography>
+                <Typography variant='h5'>
+                  {" "}
+                  Commercial project. Balcosmos Music Producer Website.
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <Box sx={item}>
+                <Typography variant='h6' sx={{ my: 5 }}>
+                  <Link
+                    target='_blank'
+                    href='https://elizpn.github.io/Swedish-radio/'
+                    sx={{ textDecoration: "none" }}
+                  >
+                    {" "}
+                    <Box
+                      component='img'
+                      src={swedishRadio}
+                      alt='clock'
+                      sx={{ height: 180, width: 300 }}
+                    />
+                    Swedish Radio Program App
+                  </Link>
+                </Typography>
+                <Typography variant='h5'>
+                  This web application allows users to browse and listen to
+                  various programs from Swedish Radio. Users can select a
+                  category to view programs in that category and click on a
+                  program to listen to it.
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <Box sx={item}>
+                <Typography variant='h6' sx={{ my: 5 }}>
+                  <Link
+                    target='_blank'
+                    href='https://elizpn.github.io/april/'
+                    sx={{ textDecoration: "none" }}
+                  >
+                    {" "}
+                    <Box
+                      component='img'
+                      src={aprilImg}
+                      alt='clock'
+                      sx={{ height: 180, width: 300 }}
+                    />
+                    Choir April Website
+                  </Link>
+                </Typography>
+                <Typography variant='h5'>
+                  {" "}
+                  The website showcases the Choir April group and their upcoming
+                  performances. The website is fully responsive and includes
+                  features such as filterable image gallery and a contact form.
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <Box sx={item}>
+                <Typography variant='h6' sx={{ my: 5 }}>
+                  <Link
+                    target='_blank'
                     href='https://elizpn.github.io/react-typical-challenges/'
                     sx={{ textDecoration: "none" }}
                   >
@@ -135,82 +211,9 @@ function Projects() {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item xs={12} md={4}>
-              <Box sx={item}>
-                <Typography variant='h6' sx={{ my: 5 }}>
-                  <Link
-                    target='_blank'
-                    href='https://balcosmos.com/'
-                    sx={{ textDecoration: "none" }}
-                  >
-                    {" "}
-                    <Box
-                      component='img'
-                      src={balcosmosImg}
-                      alt='clock'
-                      sx={{ height: 180, width: 300 }}
-                    />
-                    Balcosmos oficial website
-                  </Link>
-                </Typography>
-                <Typography variant='h5'>
-                  {" "}
-                  Commercial project. Balcosmos Music Producer Website.
-                </Typography>
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <Box sx={item}>
-                <Typography variant='h6' sx={{ my: 5 }}>
-                  <Link
-                    target='_blank'
-                    href='https://elizpn.github.io/april/'
-                    sx={{ textDecoration: "none" }}
-                  >
-                    {" "}
-                    <Box
-                      component='img'
-                      src={aprilImg}
-                      alt='clock'
-                      sx={{ height: 180, width: 300 }}
-                    />
-                    Choir April Website
-                  </Link>
-                </Typography>
-                <Typography variant='h5'>
-                  {" "}
-                  The website showcases the Choir April group and their upcoming
-                  performances. The website is fully responsive and includes
-                  features such as filterable image gallery and a contact form.
-                </Typography>
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <Box sx={item}>
-                <Typography variant='h6' sx={{ my: 5 }}>
-                  <Link
-                    target='_blank'
-                    href='https://elizpn.github.io/Swedish-radio/'
-                    sx={{ textDecoration: "none" }}
-                  >
-                    {" "}
-                    <Box
-                      component='img'
-                      src={swedishRadio}
-                      alt='clock'
-                      sx={{ height: 180, width: 300 }}
-                    />
-                    Swedish Radio Program App
-                  </Link>
-                </Typography>
-                <Typography variant='h5'>
-                  This web application allows users to browse and listen to
-                  various programs from Swedish Radio. Users can select a
-                  category to view programs in that category and click on a
-                  program to listen to it.
-                </Typography>
-              </Box>
-            </Grid>
+            
+            
+            
           </Grid>
         </Container>
       </Box>
