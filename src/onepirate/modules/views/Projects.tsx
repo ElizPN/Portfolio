@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Theme } from "@mui/material/styles";
+import { Theme, styled } from "@mui/material/styles";
 import { SxProps } from "@mui/system";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
@@ -21,6 +21,18 @@ const item: SxProps<Theme> = {
   px: 5,
 };
 
+const StyledImageBox = styled(Box)(({ theme }) => ({
+
+  [theme.breakpoints.down("sm")]: {
+    width: 350,
+    height: 200,
+  },
+   [theme.breakpoints.up("sm")]: {
+    width: 500,
+    height: 300,  
+  },  
+})) as typeof Box
+
 function Projects() {
   return (
     <Box id='projects'>
@@ -41,7 +53,7 @@ function Projects() {
             sx={{ pointerEvents: "none", position: "absolute", top: -180 }}
           />
           <Grid container spacing={5}>
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} md={6}>
               <Box sx={item}>
                 <Typography variant='h6' sx={{ my: 5 }}>
                   <Link
@@ -50,12 +62,11 @@ function Projects() {
                     sx={{ textDecoration: "none" }}
                   >
                     {" "}
-                    <Box
+                    <StyledImageBox
                       component='img'
                       src={balcosmosImg}
                       alt='clock'
-                      sx={{ height: 180, width: 300 }}
-                    />
+                    />  
                     Balcosmos oficial website
                   </Link>
                 </Typography>
@@ -65,7 +76,7 @@ function Projects() {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} md={6}>
               <Box sx={item}>
                 <Typography variant='h6' sx={{ my: 5 }}>
                   <Link
@@ -74,11 +85,10 @@ function Projects() {
                     sx={{ textDecoration: "none" }}
                   >
                     {" "}
-                    <Box
+                    <StyledImageBox
                       component='img'
                       src={swedishRadio}
                       alt='clock'
-                      sx={{ height: 180, width: 300 }}
                     />
                     Swedish Radio Program App
                   </Link>
@@ -91,7 +101,7 @@ function Projects() {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} md={6}>
               <Box sx={item}>
                 <Typography variant='h6' sx={{ my: 5 }}>
                   <Link
@@ -100,11 +110,10 @@ function Projects() {
                     sx={{ textDecoration: "none" }}
                   >
                     {" "}
-                    <Box
+                    <StyledImageBox
                       component='img'
                       src={aprilImg}
                       alt='clock'
-                      sx={{ height: 180, width: 300 }}
                     />
                     Choir April Website
                   </Link>
@@ -117,7 +126,7 @@ function Projects() {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} md={6}>
               <Box sx={item}>
                 <Typography variant='h6' sx={{ my: 5 }}>
                   <Link
@@ -125,11 +134,10 @@ function Projects() {
                     href='https://elizpn.github.io/react-typical-challenges/'
                     sx={{ textDecoration: "none" }}
                   >
-                    <Box
+                    <StyledImageBox
                       component='img'
                       src={reactProjectImg}
                       alt='suitcase'
-                      sx={{ height: 180, width: 300 }}
                     />
                     React typicall challenges
                   </Link>
@@ -140,7 +148,7 @@ function Projects() {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} md={6}>
               <Box sx={item}>
                 <Typography variant='h6' sx={{ my: 5 }}>
                   <Link
@@ -148,11 +156,10 @@ function Projects() {
                     href='https://elizpn.github.io/Weather-App-React/'
                     sx={{ textDecoration: "none" }}
                   >
-                    <Box
+                    <StyledImageBox
                       component='img'
                       src={weatherAppImg}
                       alt='clock'
-                      sx={{ height: 180, width: 300 }}
                     />
                     Weather App
                   </Link>
@@ -164,7 +171,7 @@ function Projects() {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} md={6}>
               <Box sx={item}>
                 <Typography variant='h6' sx={{ my: 5 }}>
                   <Link
@@ -172,11 +179,10 @@ function Projects() {
                     href='https://elizpn.github.io/todo-list/'
                     sx={{ textDecoration: "none" }}
                   >
-                    <Box
+                    <StyledImageBox
                       component='img'
                       src={toDoListImg}
                       alt='clock'
-                      sx={{ height: 180, width: 300 }}
                     />
                     To Do List
                   </Link>
@@ -188,7 +194,7 @@ function Projects() {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} md={6}>
               <Box sx={item}>
                 <Typography variant='h6' sx={{ my: 5 }}>
                   <Link
@@ -196,11 +202,10 @@ function Projects() {
                     href='https://elizpn.github.io/elizpn.github.io-duck-game/'
                     sx={{ textDecoration: "none" }}
                   >
-                    <Box
+                    <StyledImageBox
                       component='img'
                       src={duckImg}
                       alt='graph'
-                      sx={{ height: 180, width: 300 }}
                     />
                     Duck game
                   </Link>
