@@ -56,6 +56,8 @@ function ContactForm() {
                 placeholder="Message"
                 variant="standard"
                 sx={{ width: '100%', mt: 3, mb: 2 }}
+                multiline
+                rows={5}
               />
               <Button
                 type="submit"
