@@ -32,16 +32,12 @@ function ContactForm() {
       console.log("Error", res);
       setResult(res.message);
     }
+    setOpen(true);
   };
 
-  // const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-  //   event.preventDefault();
-  //   setOpen(true);
-  // };
-
-  // const handleClose = () => {
-  //   setOpen(false);
-  // };
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   return (
     <Container component="section" sx={{ mt: 10, display: 'flex' }}>
@@ -58,10 +54,10 @@ function ContactForm() {
           >
             <Box sx={{ maxWidth: 400 }}>
               <Typography variant="h2" component="h2" gutterBottom>
-                Receive offers
+               Contact me
               </Typography>
               <Typography variant="h5">
-                Taste the holidays of the everyday close to home.
+                And let's Create Something Amazing Together!
               </Typography>
                
               <TextField
@@ -137,11 +133,11 @@ function ContactForm() {
           />
         </Grid>
       </Grid>
-      {/* <Snackbar
+      <Snackbar
         open={open}
         closeFunc={handleClose}
-        message="We will send you our best offers, once a week."
-      /> */}
+        message={result}
+      />
         <Typography>{result}</Typography>
     </Container>
   );
