@@ -6,22 +6,46 @@ import Typography from '../components/Typography';
 import TextField from '../components/TextField';
 import Snackbar from '../components/Snackbar';
 import Button from '../components/Button';
+import { useState } from 'react';
 
 function ContactForm() {
+
   const [open, setOpen] = React.useState(false);
+  const [result, setResult] = useState("");
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setOpen(true);
+    setResult("Sending....");
+    const formData = new FormData(event.target as HTMLFormElement);
+
+    formData.append("access_key", "757fdfa8-9268-4e1a-a3e4-223c2140e89f");
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      console.log("Success", res);
+      setResult(res.message);
+    } else {
+      console.log("Error", res);
+      setResult(res.message);
+    }
   };
 
-  const handleClose = () => {
-    setOpen(false);
-  };
+  // const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  //   event.preventDefault();
+  //   setOpen(true);
+  // };
+
+  // const handleClose = () => {
+  //   setOpen(false);
+  // };
 
   return (
     <Container component="section" sx={{ mt: 10, display: 'flex' }}>
-      <Grid container>
+      <Grid container component="form" onSubmit={onSubmit}>
         <Grid item xs={12} md={6} sx={{ zIndex: 1 }}>
           <Box
             sx={{
@@ -32,29 +56,39 @@ function ContactForm() {
               px: 3,
             }}
           >
-            <Box component="form" onSubmit={handleSubmit} sx={{ maxWidth: 400 }}>
+            <Box sx={{ maxWidth: 400 }}>
               <Typography variant="h2" component="h2" gutterBottom>
                 Receive offers
               </Typography>
               <Typography variant="h5">
                 Taste the holidays of the everyday close to home.
               </Typography>
+               
               <TextField
+                required
                 noBorder
                 placeholder="Your name"
                 variant="standard"
+                name='name'
+                type='text'
                 sx={{ width: '100%', mt: 3, mb: 2 }}
               />
               <TextField
+                required
                 noBorder
                 placeholder="Your email"
                 variant="standard"
+                name='email'
+                type='email'
                 sx={{ width: '100%', mt: 3, mb: 2 }}
               />
               <TextField
+                required
                 noBorder
                 placeholder="Message"
                 variant="standard"
+                name='message'
+                type='text'
                 sx={{ width: '100%', mt: 3, mb: 2 }}
                 multiline
                 rows={5}
@@ -103,11 +137,12 @@ function ContactForm() {
           />
         </Grid>
       </Grid>
-      <Snackbar
+      {/* <Snackbar
         open={open}
         closeFunc={handleClose}
         message="We will send you our best offers, once a week."
-      />
+      /> */}
+        <Typography>{result}</Typography>
     </Container>
   );
 }
