@@ -43,8 +43,8 @@ function ContactForm() {
 
   return (
     <Container component="section" sx={{ mt: 10, display: 'flex' }}>
-      <Grid container component="form" onSubmit={onSubmit} justifyContent="space-between">
-        <Grid item xs={12} md={6} sx={{ zIndex: 1 }}>
+      <Grid container component="form" onSubmit={onSubmit}   justifyContent="space-around">
+        <Grid item xs={12}  sx={{ zIndex: 1 }}>
           <Box
             sx={{
               display: 'flex',
@@ -107,7 +107,7 @@ function ContactForm() {
           mt={20}
           mb={10}
           xs={12}
-          md={6}
+        
           sx={{ display: { md: 'block' }, position: 'relative',  }}
         >
 
