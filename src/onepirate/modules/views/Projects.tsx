@@ -98,7 +98,7 @@ function Projects() {
                   </Link>
                 </Typography>
                 <Typography>
-                  Technologies used: React, TS, Meterial UI
+                  Technologies used: React, TS, Meterial UI, Jest
                 </Typography>
                 <Typography variant='h5'>
                   This web application allows users to browse and listen to
@@ -153,7 +153,7 @@ function Projects() {
                   </Link>
                 </Typography>
                   <Typography>
-                  Technologies used: React, Redux, TS, Contentful API, Meterial UI
+                  Technologies used: React, Redux, TS, Contentful API, Meterial UI, Jest
                 </Typography> 
                 <Typography variant='h5'>
                   On this website you will see solutions to the most common
@@ -178,7 +178,7 @@ function Projects() {
                   </Link>
                 </Typography>
                   <Typography>
-                  Technologies used: React, TS, Meterial UI
+                  Technologies used: React, TS, Meterial UI, Jest, Cypress
                 </Typography> 
                 <Typography variant='h5'>
                   With this app you can check the weather in any city in the
@@ -204,7 +204,7 @@ function Projects() {
                   </Link>
                 </Typography>
                   <Typography>
-                  Technologies used: React, Redux, TS, Meterial UI
+                  Technologies used: React, Redux, TS, Meterial UI, Jest
                 </Typography> 
                 <Typography variant='h5'>
                   You don`t have to memorize everything you need to do this week
