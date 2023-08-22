@@ -1,6 +1,5 @@
 import * as React from "react";
 import Skills from "./modules/views/Skills";
-import AppFooter from "./modules/views/AppFooter";
 import AboutMe from "./modules/views/AboutMe";
 import Projects from "./modules/views/Projects";
 import AppAppBar from "./modules/views/AppAppBar";
@@ -15,7 +14,6 @@ function Index() {
       <Skills />
       <Projects />
       <ContactForm />
-      <AppFooter />
     </React.Fragment>
   );
 }
