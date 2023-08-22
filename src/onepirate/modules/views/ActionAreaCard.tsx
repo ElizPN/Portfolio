@@ -16,16 +16,18 @@ export default function ActionAreaCard() {
             fontSize={20}
             maxWidth={700}
           >
-            I am a dedicated front-end developer with two years of experience, a
+            I am a dedicated web developer with 2,5 years of experience, a
             passion for continued learning, and a strong track record of
             building projects with React, TypeScript, Material UI, and other
             technologies. I have completed multiple front-end development
-            courses and have created over 1,600 commits across 35 repositories.
+            courses and have created over 2000 commits across 35 repositories.
             I have solved over 200 algorithmic challenges in JavaScript. My
             professional competence includes proficiency in TypeScript,
             JavaScript, React, Redux, Jest, Cypress, MUI, Contentful CMS, Vue,
-            Phaser, CI/CD pipelines using GitHub workflows, Webpack, HTTP
+             CI/CD pipelines using GitHub workflows, Webpack, HTTP
             protocol, Git, and Yarn/npm as dependency managers.
+
+            I also have few projects using Express, Mongo DB and SQLite.
           </Typography>
         </CardContent>
       </CardActionArea>
