@@ -36,7 +36,7 @@ const StyledImageBox = styled(Box)(({ theme }) => ({
 function Projects() {
   return (
     <Box id='projects'>
-      <Typography variant='h4' marked='center' align='center' component='h2'>
+      <Typography variant='h4' marked='center' align='center' component='h2' my={8}>
         Projects
       </Typography>
       <Box
