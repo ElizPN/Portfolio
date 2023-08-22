@@ -7,6 +7,8 @@ import TextField from '../components/TextField';
 import Snackbar from '../components/Snackbar';
 import Button from '../components/Button';
 import { useState } from 'react';
+import Link from '@mui/material/Link';
+import {GitHub, LinkedIn } from '@mui/icons-material';
 
 function ContactForm() {
 
@@ -41,7 +43,7 @@ function ContactForm() {
 
   return (
     <Container component="section" sx={{ mt: 10, display: 'flex' }}>
-      <Grid container component="form" onSubmit={onSubmit}>
+      <Grid container component="form" onSubmit={onSubmit} justifyContent="space-between">
         <Grid item xs={12} md={6} sx={{ zIndex: 1 }}>
           <Box
             sx={{
@@ -53,8 +55,8 @@ function ContactForm() {
             }}
           >
             <Box sx={{ maxWidth: 400 }}>
-              <Typography variant="h2" component="h2" gutterBottom>
-               Contact me
+              <Typography variant="h4" component="h2" gutterBottom>
+               Send me a message
               </Typography>
               <Typography variant="h5">
                 And let's Create Something Amazing Together!
@@ -102,36 +104,48 @@ function ContactForm() {
         </Grid>
         <Grid
           item
+          mt={20}
+          mb={10}
           xs={12}
           md={6}
-          sx={{ display: { md: 'block', xs: 'none' }, position: 'relative' }}
+          sx={{ display: { md: 'block' }, position: 'relative',  }}
         >
+
           <Box
             sx={{
-              position: 'absolute',
-              top: -67,
-              left: -67,
-              right: 0,
-              bottom: 0,
-              width: '100%',
-              background: 'url(/static/themes/onepirate/productCTAImageDots.png)',
+              bgcolor: 'warning.main',
+              py: 8,
+              px: 3,
+              
             }}
-          />
-          <Box
-            component="img"
-            src="https://images.unsplash.com/photo-1527853787696-f7be74f2e39a?auto=format&fit=crop&w=750"
-            alt="call to action"
-            sx={{
-              position: 'absolute',
-              top: -28,
-              left: -28,
-              right: 0,
-              bottom: 0,
-              width: '100%',
-              maxWidth: 600,
-            }}
-          />
+          >
+           <Typography variant="h6" color="text.primary" gutterBottom={true}>
+              Contacts
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Email: romanovaliza9393@gmail.com
+            </Typography>
+            <Typography variant="body2" color="text.secondary" mb={5}>
+              Phone: +46 76 747 85 07 
+            </Typography>
+
+             <Typography variant="h6" color="text.primary" gutterBottom>
+              Follow Me
+            </Typography>
+            <Link href="https://github.com/ElizPN" color="inherit" target="_blank">
+              <GitHub />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/liza-romanova-8216a6214/"
+              color="inherit"
+              target="_blank"
+              sx={{ pl: 1, pr: 1 }}
+            >
+              <LinkedIn />
+            </Link>
+            </Box>
         </Grid>
+        
       </Grid>
       <Snackbar
         open={open}
