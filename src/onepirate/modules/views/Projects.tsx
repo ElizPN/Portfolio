@@ -22,6 +22,7 @@ const item: SxProps<Theme> = {
 };
 
 const StyledImageBox = styled(Box)(({ theme }) => ({
+  borderRadius: 5,
 
   [theme.breakpoints.down("sm")]: {
     width: 350,
@@ -70,7 +71,10 @@ function Projects() {
                     Balcosmos oficial website
                   </Link>
                 </Typography>
-                <Typography variant='h5'>
+                 <Typography>
+                  Technologies used: React, TS, Meterial UI
+                </Typography> 
+                <Typography variant="h5">
                   {" "}
                   Commercial project. Balcosmos Music Producer Website.
                 </Typography>
@@ -92,6 +96,9 @@ function Projects() {
                     />
                     Swedish Radio Program App
                   </Link>
+                </Typography>
+                <Typography>
+                  Technologies used: React, TS, Meterial UI
                 </Typography>
                 <Typography variant='h5'>
                   This web application allows users to browse and listen to
@@ -118,6 +125,9 @@ function Projects() {
                     Choir April Website
                   </Link>
                 </Typography>
+                  <Typography>
+                  Technologies used: React, TS, Bootstarap
+                </Typography> 
                 <Typography variant='h5'>
                   {" "}
                   The website showcases the Choir April group and their upcoming
@@ -142,6 +152,9 @@ function Projects() {
                     React typicall challenges
                   </Link>
                 </Typography>
+                  <Typography>
+                  Technologies used: React, Redux, TS, Contentful API, Meterial UI
+                </Typography> 
                 <Typography variant='h5'>
                   On this website you will see solutions to the most common
                   tasks on React.
@@ -164,6 +177,9 @@ function Projects() {
                     Weather App
                   </Link>
                 </Typography>
+                  <Typography>
+                  Technologies used: React, TS, Meterial UI
+                </Typography> 
                 <Typography variant='h5'>
                   With this app you can check the weather in any city in the
                   world. The icons in the Weather app indicate different weather
@@ -187,6 +203,9 @@ function Projects() {
                     To Do List
                   </Link>
                 </Typography>
+                  <Typography>
+                  Technologies used: React, Redux, TS, Meterial UI
+                </Typography> 
                 <Typography variant='h5'>
                   You don`t have to memorize everything you need to do this week
                   or for the current month. Just use the ToDoList App to
@@ -210,6 +229,9 @@ function Projects() {
                     Duck game
                   </Link>
                 </Typography>
+                  <Typography>
+                  Technologies used: Phaser 3 
+                </Typography> 
                 <Typography variant='h5'>
                   This is my first game with hungry duck. Her goal - to eat
                   bread before her competitor will do this.
