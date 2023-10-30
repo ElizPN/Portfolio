@@ -13,6 +13,7 @@ import weatherAppImg from "./images/weather-app.png";
 import balcosmosImg from "./images/balcosmos.png";
 import aprilImg from "./images/april.jpeg";
 import swedishRadio from "./images/sw-radio.png";
+import lookupService from "./images/lookup-service-logic.png";
 
 const item: SxProps<Theme> = {
   display: "flex",
@@ -113,6 +114,31 @@ function Projects() {
                 <Typography variant='h6' sx={{ my: 5 }}>
                   <Link
                     target='_blank'
+                    href='https://elizpn.github.io/Swedish-radio/'
+                    sx={{ textDecoration: "none" }}
+                  >
+                    {" "}
+                    <StyledImageBox
+                      component='img'
+                      src={lookupService}
+                      alt='clock'
+                    />
+                    Backend lookup service
+                  </Link>
+                </Typography>
+                <Typography>
+                  Technologies used: Express JS, SQLite, Cypress
+                </Typography>
+                <Typography variant='h5'>
+                  This web application allows ....
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Box sx={item}>
+                <Typography variant='h6' sx={{ my: 5 }}>
+                  <Link
+                    target='_blank'
                     href='https://elizpn.github.io/april/'
                     sx={{ textDecoration: "none" }}
                   >
@@ -149,7 +175,7 @@ function Projects() {
                       src={reactProjectImg}
                       alt='suitcase'
                     />
-                    React typicall challenges
+                    Personal Blog about web development
                   </Link>
                 </Typography>
                   <Typography>
@@ -157,7 +183,7 @@ function Projects() {
                 </Typography> 
                 <Typography variant='h5'>
                   On this website you will see solutions to the most common
-                  tasks on React.
+                  tasks on React, Redux and Unin testing
                 </Typography>
               </Box>
             </Grid>
