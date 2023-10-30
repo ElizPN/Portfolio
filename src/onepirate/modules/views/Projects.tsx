@@ -187,8 +187,12 @@ function Projects() {
                   Technologies used: React, Redux, TS, Contentful API, Meterial UI, Jest
                 </Typography> 
                 <Typography variant='h5'>
-                  On this website you will see solutions to the most common
-                  tasks on React, Redux and Unin testing
+                  Using Contentful CMS makes this app flexsible and fluent in terms of adding new content.
+                  Storing and manipulation data in Redux allow to devide state managment logic from its representetion.
+                  Components with main logig are covered with unit test using Jest. 
+                  I would say, the App is coverred with unit test on 90%.
+                  On this website you can see solutions to the most common
+                  tasks on React, Redux and Unin testing.
                 </Typography>
               </Box>
             </Grid>
