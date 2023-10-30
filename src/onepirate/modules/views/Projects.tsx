@@ -77,7 +77,10 @@ function Projects() {
                 </Typography> 
                 <Typography variant="h5">
                   {" "}
-                  Commercial project. Balcosmos Music Producer Website.
+                Landing page for music producer. 
+                Fully responsive design with hamburger menu. Implemented CI/CD Pipeline using GitHUb Actions.
+                Contact form. Modal windows. YouTube, Spotify, SoundCloud embedding.
+
                 </Typography>
               </Box>
             </Grid>
@@ -130,7 +133,9 @@ function Projects() {
                   Technologies used: Express JS, SQLite, Cypress
                 </Typography>
                 <Typography variant='h5'>
-                  This web application allows ....
+                  The Lookup Service fetches data from DB, if data exists, the service sends it to client. 
+                  In a case there is no data, service sends request to external API, get data, and store them in DB.
+                  In this way I implemented Data base cashing.
                 </Typography>
               </Box>
             </Grid>
