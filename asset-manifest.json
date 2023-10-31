@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.964fdded.css",
-    "main.js": "/Portfolio/static/js/main.c4891a49.js",
+    "main.js": "/Portfolio/static/js/main.15bc321d.js",
     "static/js/787.128fc6e9.chunk.js": "/Portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/april.jpeg": "/Portfolio/static/media/april.4c65ae6b5baecf96f557.jpeg",
     "static/media/balcosmos.png": "/Portfolio/static/media/balcosmos.90f0a9cd960733291f2b.png",
@@ -10,6 +10,7 @@
     "static/media/woman-5653501.jpeg": "/Portfolio/static/media/woman-5653501.a7055fd553af91fa3b9d.jpeg",
     "static/media/vue.jpg": "/Portfolio/static/media/vue.91d89fa62a4b9ab8c7f8.jpg",
     "static/media/rtc.jpeg": "/Portfolio/static/media/rtc.dc73ae49ba8849b51fb9.jpeg",
+    "static/media/lookup-service-logic.png": "/Portfolio/static/media/lookup-service-logic.5bbbbb1a4e611c662f27.png",
     "static/media/phaser.jpg": "/Portfolio/static/media/phaser.9653a9c72d90fff0a5b5.jpg",
     "static/media/html-css2.jpg": "/Portfolio/static/media/html-css2.2d8b179280bc0807ece4.jpg",
     "static/media/weather-app.png": "/Portfolio/static/media/weather-app.3c5c121f0294a5842fb6.png",
@@ -22,11 +23,11 @@
     "static/media/mui.jpg": "/Portfolio/static/media/mui.c07daf6b4e63669eea96.jpg",
     "index.html": "/Portfolio/index.html",
     "main.964fdded.css.map": "/Portfolio/static/css/main.964fdded.css.map",
-    "main.c4891a49.js.map": "/Portfolio/static/js/main.c4891a49.js.map",
+    "main.15bc321d.js.map": "/Portfolio/static/js/main.15bc321d.js.map",
     "787.128fc6e9.chunk.js.map": "/Portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.964fdded.css",
-    "static/js/main.c4891a49.js"
+    "static/js/main.15bc321d.js"
   ]
 }
