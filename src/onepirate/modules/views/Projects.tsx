@@ -73,7 +73,7 @@ function Projects() {
                   </Link>
                 </Typography>
                  <Typography>
-                  Technologies used: React, TS, Meterial UI
+                  Technologies used: TypeScript, React, Meterial UI
                 </Typography> 
                 <Typography variant="h5">
                   {" "}
@@ -102,7 +102,7 @@ function Projects() {
                   </Link>
                 </Typography>
                 <Typography>
-                  Technologies used: React, TS, Meterial UI, Jest
+                  Technologies used: TypeScript, React, Meterial UI, Jest
                 </Typography>
                 <Typography variant='h5'>
                   This web application allows users to browse and listen to
@@ -133,9 +133,9 @@ function Projects() {
                   Technologies used: Express JS, SQLite, Cypress
                 </Typography>
                 <Typography variant='h5'>
-                  The Lookup Service fetches data from DB, if data exists, the service sends it to client. 
-                  In a case there is no data, service sends request to external API, get data, and store them in DB.
-                  In this way I implemented Data base cashing.
+                  The Lookup Service fetches data from the database. If the data exists, the service sends it to the client. 
+                  In the case where there is no data, the service sends a request to an external API, 
+                  retrieves the data, and stores it in the database. This is how I implemented database caching.
                 </Typography>
               </Box>
             </Grid>
@@ -157,13 +157,12 @@ function Projects() {
                   </Link>
                 </Typography>
                   <Typography>
-                  Technologies used: React, TS, Bootstarap
+                  Technologies used: TypeScript, React, Bootstarap
                 </Typography> 
                 <Typography variant='h5'>
                   {" "}
-                  The website showcases the Choir April group and their upcoming
-                  performances. The website is fully responsive and includes
-                  features such as filterable image gallery and a contact form.
+                  The website showcases the Choir April group and their upcoming performances. 
+                  It is fully responsive and includes features such as a filterable image gallery and a contact form.
                 </Typography>
               </Box>
             </Grid>
@@ -184,15 +183,15 @@ function Projects() {
                   </Link>
                 </Typography>
                   <Typography>
-                  Technologies used: React, Redux, TS, Contentful API, Meterial UI, Jest
+                  Technologies used: TypeScript, React, Redux, Contentful API, Meterial UI, Jest
                 </Typography> 
                 <Typography variant='h5'>
-                  Using Contentful CMS makes this app flexsible and fluent in terms of adding new content.
-                  Storing and manipulation data in Redux allow to devide state managment logic from its representetion.
-                  Components with main logig are covered with unit test using Jest. 
-                  I would say, the App is coverred with unit test on 90%.
-                  On this website you can see solutions to the most common
-                  tasks on React, Redux and Unin testing.
+                  Using Contentful CMS makes this app flexible and fluent when it comes to adding new content. 
+                  Storing and manipulating data in Redux allows us to separate state management logic from its representation. 
+                  Components with the main logic are covered with unit tests using Jest. 
+                  The app is covered with unit tests to 90%. 
+                  On this website, you can find solutions to the most common tasks in React, Redux, and unit testing. 
+                  It's deployed on GitHub Pages.
                 </Typography>
               </Box>
             </Grid>
@@ -213,7 +212,7 @@ function Projects() {
                   </Link>
                 </Typography>
                   <Typography>
-                  Technologies used: React, TS, Meterial UI, Jest, Cypress
+                  Technologies used: TypeScript, React, Meterial UI, Jest, Cypress
                 </Typography> 
                 <Typography variant='h5'>
                   With this app you can check the weather in any city in the
@@ -239,7 +238,7 @@ function Projects() {
                   </Link>
                 </Typography>
                   <Typography>
-                  Technologies used: React, Redux, TS, Meterial UI, Jest
+                  Technologies used: TypeScript, React, Redux, Meterial UI, Jest
                 </Typography> 
                 <Typography variant='h5'>
                   You don`t have to memorize everything you need to do this week
