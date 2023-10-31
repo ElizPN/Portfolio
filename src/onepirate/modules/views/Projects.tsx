@@ -260,7 +260,7 @@ function Projects() {
                       src={duckImg}
                       alt='graph'
                     />
-                    Duck game
+                    Duck game.
                   </Link>
                 </Typography>
                   <Typography>
